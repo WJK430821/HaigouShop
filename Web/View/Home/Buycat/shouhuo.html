@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>填写收货人信息页</title>
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/header.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/footer.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/index.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/good_info.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/mybuycat.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/flow.css" rel="stylesheet">
+</head>
+
+<body>
+<?php include("./Web/View/Home/Buycat/header.html");?>
+    <!--主体开始-->
+      <div class="w">
+      		<div class="maincontent">
+            	<div class="orderBox">
+                	<form action="<?php echo URL."/order/insert";?>" method="post">
+                    <input type="hidden" value="<?php echo $_SESSION['total']; ?>"/>
+                    <div class="information" style="display:block;">
+                        <div class="orderTit">
+                            <strong>收货人信息</strong><a href="<?php echo URL."/buycat/show";?>"><span>[关闭]</span></a>
+                        </div>
+                        <div class="addrBox">
+                        	<div class="addrNew">
+                            	<div class="addrForm">
+                                	<label class="fl">
+                                    	<span>*</span>
+                                        收货人姓名：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                		<input type="text" name="linkman" class="yangshi" value="<?php echo $_SESSION['homeuser']['name']?>" />
+                                	</div>
+                                </div>
+                                
+                                <div class="addrForm">
+                                	<label class="fl">
+                                    	<span>*</span>
+                                        详细地址：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                		<input type="text" name="address" class="xxdz yangshi" value="<?php echo $_SESSION['homeuser']['address']?>"/>
+                                	</div>
+                                </div>
+                                <div class="addrForm">
+                                	<label class="fl">
+                                    	<span>*</span>
+                                        收货人电话：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                		<input type="text" name="phone" class="tel yangshi" value="<?php echo $_SESSION['homeuser']['phone']?>"/>
+                                	</div>
+                                    
+                                    <em class="tishi">*手机和固定电话请至少正确填写一个</em>
+                                </div>
+                                <div class="addrForm">
+                                	<label class="fl">
+                                    	<span>*</span>
+                                        常用邮箱：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                		<input type="text" name="email" class="yangshi" value="<?php echo $_SESSION['homeuser']['email']?>"/>
+                                	</div>
+                                     <em class="guding">用来接收订单提醒邮件，便于您及时了解状态</em> 
+                                   	 <em class="tishi">*邮箱格式不正确</em>
+                                </div>
+                                <div class="addrForm">
+                                	<label class="fl">
+                                    	<span>*</span>
+                                        邮政编码：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                		<input type="text" name="code" class="yangshi yzm" value="<?php echo $_SESSION['homeuser']['code']?>"/>
+                                	</div>
+                                    <em class="guding">有助于快速确定送货地址</em> 
+                                </div>
+                                <div class="addrForm">
+                                	<input type="submit" class="baocun" value="保存收货人信息" />
+                                    <!-- <a href="" class="baocun"><font size="2">已保存，下一步</font></a> -->
+                                    <a href="<?php echo URL."/buycat/show";?>" class="baocun"><font size="2">返回我的购物车</font></a>
+                                    <a href="<?php echo URL;?>" class="baocun"><font size="2">我还想逛逛</font></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+
+               
+            </div>
+      </div>
+    <!--主体结束-->
+     <!--尾部-->
+    	<div class="footer">
+
+            <div class="footer-nav">
+            	<div class="wrapper">
+                	<p class="p-nav">
+						<a href="#" target="_blank" rel="nofollow">关于我们</a>  | 
+                        <a href="#" target="_blank" rel="nofollow">企业荣誉</a>  |
+                        <a href="#" target="_blank" rel="nofollow">联系我们</a>  |
+                        <a href="#" target="_blank" rel="nofollow">招贤纳士</a>  |
+                        <a href="#" target="_blank" rel="nofollow">友情链接</a>  |
+                        <a href="#" target="_blank" rel="nofollow">供货商管理平台</a>  |
+                        <a href="#" target="_blank" rel="nofollow">网站地图</a> 	
+                    </p>
+                    <p class="banquan">
+                    	版权所有2008-2012 北京新七天科技有限公司 英特网信息服务业务经营许可证号：京ICP备12008572号-1
+                    </p>
+                    <p class="p-img">
+                    	<a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/b2c.jpg" />
+                        </a>
+                        <a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/dz.jpg" />
+                        </a>
+                        <a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/qiang.jpg" />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!--尾部结束-->
+</body>
+</html>

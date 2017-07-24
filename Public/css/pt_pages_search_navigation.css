@@ -1,0 +1,390 @@
+/* Code tidied up by ScrapBook */
+body { background-color: rgb(243, 243, 243); }
+.m-search .arrow-down, .m-search .arrow-up, .m-search .soldout, .m-search .more span, .m-search .simplePage a, .m-search .simplePage span, .m-result .saelsinfo span, .m-result .comments .icon, .m-result .arrivenotice .icon, .m-timerbox .text, .m-skulist .arrow, .m-shop .shoptag, .m-search .shoptagicon { background: transparent url("icon-new.png") no-repeat scroll -9999px -9999px; }
+.m-search { position: relative; width: 1104px; margin: 0px auto; text-align: left; font-size: 14px; }
+.m-search .resultwrap { margin-bottom: 6px; }
+.m-classify-2 .brands h3 { display: inline; }
+.relatedKeyList { height: auto; }
+.relatedKeyList .m-reclst { margin: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 10px; }
+.relatedKeyList .m-reclst h3 { display: inline-block; }
+.relatedKeyList .m-reclst a { color: rgb(51, 51, 51); line-height: 30px; font-size: 13px; padding: 0px 7px; }
+.m-search .correction { width: 1038px; padding: 10px 25px; margin-top: 10px; border: 1px solid rgb(221, 221, 221); background-color: rgb(255, 248, 219); line-height: 24px; }
+.m-search .correction span, .m-search .correction a, .m-search .correction a:hover { color: rgb(210, 33, 71); }
+.m-search .resultinfo { margin: 15px 0px 10px; line-height: 22px; }
+.m-search .resultinfo a { color: rgb(51, 51, 51); }
+.m-search .total { float: left; line-height: 22px; font-size: 12px; }
+.m-search .all { float: left; line-height: 22px; font-size: 12px; }
+.m-search .gnum { margin-left: 15px; height: 22px; display: inline-block; line-height: 24px; color: rgb(153, 153, 153); font-size: 12px; }
+.m-search .chosen { display: inline-block; position: relative; float: left; height: 22px; padding: 0px 30px 0px 10px; border: 1px dotted rgb(210, 33, 71); background-color: rgb(255, 255, 255); color: rgb(107, 107, 107); line-height: 22px; font-size: 12px; cursor: pointer; z-index: 11; }
+.m-search .chosen .value { color: rgb(210, 33, 71); }
+.m-search .chosen b, .m-search .chosen i { position: absolute; top: 0px; right: 0px; padding: 0px 4px; font-weight: bold; font-size: 16px; color: rgb(0, 0, 0); font-family: "iconfont"; }
+.m-search .chosen:hover b { background-color: rgb(210, 33, 71); color: rgb(255, 255, 255); }
+.m-search .cateTag { display: inline-block; position: relative; float: left; height: 22px; font-size: 12px; }
+.m-search .cateTag .cateBox { display: none; position: absolute; z-index: 10; top: 23px; left: 0px; width: auto; padding: 15px 0px; max-width: 420px; max-height: 120px; overflow: auto; border: 1px solid rgb(210, 33, 71); background-color: white; }
+.m-search .cateTag .cateBox a { height: 22px; width: 80px; float: left; margin: 5px 10px; color: rgb(51, 51, 51); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.m-search .cateTag:hover .cateBox { display: inline-block; }
+.m-search .cateTag:hover .chosen { border-width: 1px; border-style: solid; border-color: rgb(210, 33, 71) rgb(210, 33, 71) white; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.m-search .cateTag .cateBox a:hover { color: rgb(210, 33, 71); }
+.m-search .cateTag:hover .down { display: none; }
+.m-search .cateTag:hover .up { display: inline; }
+.m-search .options { width: 1090px; margin: 0px auto; }
+.m-search i { color: rgb(210, 33, 71); }
+.m-search .name { float: left; width: 75px; height: 100%; padding-top: 15px; padding-left: 15px; color: rgb(102, 102, 102); font-size: 13px; line-height: 14px; background: rgb(248, 248, 248) none repeat scroll 0% 0%; }
+.m-search .letter { padding-top: 10px; line-height: 25px; }
+.m-search .opertaion { margin-bottom: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(234, 234, 234); }
+.m-search .opertaion-1 { margin-bottom: 10px; }
+.m-search .property {  }
+.m-search .z-cat3 { border-bottom: 1px dotted rgb(234, 234, 234); }
+.m-search .nobottomline { border-bottom: medium none; }
+.m-classify { position: relative; background: rgb(248, 248, 248) none repeat scroll 0% 0%; }
+.m-classify .hdbrands { margin-left: 90px; padding-right: 42px; padding-top: 15px; background-color: rgb(255, 255, 255); }
+.m-classify .hdbrands2 { position: relative; height: 28px; overflow: hidden; }
+.m-classify .autoheight .hdbrands2 { height: auto; }
+.m-classify .autoheight .hdbrands2 .brands { max-height: 112px; overflow-y: auto; overflow-x: hidden; }
+.m-classify .line2height .hdbrands2 { height: 55px; }
+.m-classify .brands { margin-left: 15px; line-height: 14px; overflow: auto; }
+.m-classify .brands a { float: left; display: inline-block; position: relative; padding-right: 24px; margin-bottom: 14px; cursor: pointer; font-size: 13px; text-decoration: none; color: rgb(51, 51, 51); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.m-classify .brands-cate a { width: 130px; }
+.m-classify .brands a:hover { color: rgb(210, 33, 71); }
+.m-classify .brands span:hover { color: rgb(210, 33, 71); }
+.m-classify .brands i, .m-classify .brands em, .m-classify .multbtn { display: none; }
+.m-classify .letterBox { line-height: 13px; padding-top: 10px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.m-classify .letterBox li { float: left; padding: 5px; margin: 0px 5px; cursor: pointer; font-size: 13px; color: rgb(51, 51, 51); text-decoration: none; border: 1px solid transparent; }
+.m-classify .letterBox li:hover { color: rgb(210, 33, 71); border: 1px solid rgb(210, 33, 71); }
+.m-classify .letterBox li.active { color: rgb(210, 33, 71); border: 1px solid rgb(210, 33, 71); }
+.m-classify .multiple .brands a { padding-left: 22px; }
+.m-classify .multiple em { display: block; position: absolute; left: 0px; top: 6px; width: 12px; height: 12px; border: 1px solid rgb(221, 221, 221); }
+.m-classify .multiple .selected i { display: block; position: absolute; left: 0px; top: 6px; width: 12px; height: 12px; font-size: 14px; line-height: 14px; color: rgb(210, 33, 71); text-align: center; font-family: "iconfont"; }
+.m-classify .multiple .multbtn { display: block; padding-right: 100px; text-align: center; }
+.m-classify .multbtn span { display: inline-block; width: 58px; height: 28px; margin: 10px; border: 1px solid rgb(204, 204, 204); color: rgb(51, 51, 51); line-height: 28px; cursor: pointer; }
+.m-classify .multbtn .submit { background-color: rgb(210, 33, 71); border-color: rgb(210, 33, 71); color: rgb(255, 255, 255); }
+.m-classify .multbtn .submit:hover { background-color: rgb(243, 56, 95); }
+.m-classify .multbtn .cancel:hover { border-color: rgb(210, 33, 71); color: rgb(210, 33, 71); }
+.m-classify .multbtn .disable, .m-classify .multbtn .disable:hover { background-color: rgb(204, 204, 204); border-color: rgb(204, 204, 204); cursor: pointer; }
+.m-classify .brands b { display: none; position: absolute; top: 0px; right: 4px; font-family: "iconfont"; }
+.m-classify .brands .active b { display: block; font-weight: bold; }
+.m-classify .brands .active, .m-classify .brands .active:hover { background-color: rgb(210, 33, 71); color: rgb(255, 255, 255); }
+.m-classify .morewrap { position: absolute; top: 15px; right: 0px; }
+.m-classify .more { position: relative; float: right; width: 42px; margin: auto 15px; line-height: 13px; font-size: 13px; cursor: pointer; }
+.m-classify .more:hover { color: rgb(210, 33, 71); }
+.m-classify .more:hover span { background-position: -50px 0px; }
+.m-classify .more:hover .packup { background-position: -50px -13px; }
+.m-classify .more span { position: absolute; top: 4px; left: 34px; width: 9px; height: 6px; }
+.m-classify .more span { background-position: 0px 0px; }
+.m-classify .more .packup { background-position: -21px 0px; }
+.m-classify .extmore { float: right; width: 50px; height: 20px; border: 1px solid rgb(204, 204, 204); background-color: rgb(248, 248, 248); text-align: center; letter-spacing: 1px; cursor: pointer; }
+.m-classify .extmore:hover { background-color: rgb(255, 255, 255); }
+.m-classify .extmore span { font-weight: bold; }
+.m-classify-2 { height: 26px; padding: 10px 0px; color: rgb(153, 153, 153); }
+.m-classify-2 .brands { width: 1050px; height: 26px; overflow: hidden; }
+.m-classify .brands span:hover { color: rgb(153, 153, 153); }
+.m-classify-2 .brands a { padding: 0px; margin: 0px 10px; color: rgb(153, 153, 153); }
+.m-classify-2 .brands a:hover { text-decoration: underline; }
+.m-search .m-filter .m-checkbox { margin-left: 10px; }
+.m-filter { background-color: rgb(255, 255, 255); }
+.m-filter a, .m-filter a:hover { color: rgb(51, 51, 51); text-decoration: none; }
+.m-filter .name { padding-top: 0px; line-height: 46px; }
+.m-filter .hdorder { height: 36px; background-color: rgb(255, 255, 255); }
+.m-filter .order {  }
+.m-filter .order dd { float: left; width: 76px; height: 36px; line-height: 36px; margin: -1px -1px -1px 0px; font-size: 13px; color: rgb(51, 51, 51); border: 1px solid rgb(234, 234, 234); cursor: pointer; text-align: center; }
+.m-filter .order .active { position: relative; border: 1px solid rgb(210, 33, 71); color: rgb(210, 33, 71); }
+.m-filter .order .active-1 { text-align: center; }
+.m-filter .order .active span { display: inline-block; }
+.m-filter .order .active-1 span { margin-left: 0px; }
+.m-filter .order .arrow-down, .m-filter .order .arrow-up { display: block; position: absolute; top: 13px; right: 15px; width: 8px; height: 10px; }
+.m-filter .order .arrow-down { background-position: 0px -13px; }
+.m-filter .order .arrow-up { background-position: -23px -13px; }
+.m-filter .simplePage { float: right; margin-right: 15px; margin-top: 12px; line-height: 12px; }
+.m-filter .simplePage span, .m-filter .simplePage a { display: inline-block; float: left; margin-left: 20px; }
+.m-filter .simplePage .arrow-left { background-position: -20px -188px; width: 8px; height: 13px; cursor: pointer; }
+.m-filter .simplePage .arrow-left:hover { background-position: -46px -188px; }
+.m-filter .simplePage .def-left, .m-filter .simplePage .def-left:hover { background-position: 0px -188px; cursor: default; }
+.m-filter .simplePage .arrow-right { background-position: -21px -210px; width: 8px; height: 13px; cursor: pointer; }
+.m-filter .simplePage .arrow-right:hover { background-position: -46px -210px; }
+.m-filter .simplePage .def-right, .m-filter .simplePage .def-right:hover { background-position: 0px -209px; cursor: default; }
+.m-filter .space { display: inline-block; float: left; height: 30px; margin-left: 10px; border-left: 1px solid rgb(234, 234, 234); }
+.m-result { margin-bottom: 6px; }
+.m-result .goods { position: relative; float: left; width: 262px; height: 320px; margin: 0px 7px 14px; background-color: #fff; font-size: 12px; }
+.m-result-2 { margin-left: 5px; }
+.m-result-2 .goods { margin: 0px 0px 0px -1px; width: 217px; height: 314px; background: transparent none repeat scroll 0% 0%; }
+.m-result .goodswrap { position: absolute; top: -1px; left: -1px; background-color: rgb(255, 255, 255); border-width: 0px 0px medium; border-style: solid solid none; border-color: rgb(243, 243, 243) rgb(243, 243, 243) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.m-result-2 .goodswrap { border: 1px solid rgb(234, 234, 234); }
+.m-result .goods .img { position: relative; }
+.m-result .goods a { display: block; color: rgb(51, 51, 51); }
+.m-result .img img { display: block; width: 232px; height: 232px; padding: 15px 15px 10px; }
+.m-result-2 .img img { width: 186px; height: 186px; }
+.m-result .favbtn { display: none; position: absolute; bottom: 10px; right: 15px; width: 54px; height: 22px; color: rgb(255, 255, 255); line-height: 22px; text-align: center; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); }
+.m-result .favt, .m-result .favbtn:hover { color: rgb(210, 33, 71); background-color: rgba(0, 0, 0, 0.35); }
+.m-result .favbtn .ic { font-size: 12px; }
+.m-result .goods .arrivenotice { position: absolute; left: 0px; bottom: 10px; width: 262px; height: 28px; color: rgb(255, 255, 255); text-align: center; font-size: 14px; line-height: 28px; background-color: rgba(0, 0, 0, 0.5); }
+.m-result .arrivenotice .icon { display: block; position: absolute; top: 8px; left: 96px; width: 8px; height: 14px; background-position: -1px -252px; }
+.m-result .arrivenotice .text { display: inline-block; padding-left: 14px; }
+.m-result .goods .promote { position: absolute; top: 0px; left: 0px; width: 72px; height: 48px; }
+.m-result .goods .discount { display: inline-block; position: absolute; top: 0px; left: 0px; width: 42px; height: 40px; background-color: rgb(255, 255, 255); border: 1px solid rgb(102, 102, 102); font-size: 16px; text-align: center; line-height: 40px; color: rgb(102, 102, 102); font-weight: bold; }
+.m-result .goods .desc { width: 234px; padding: 0px 14px 11px; }
+.m-result-2 .goods .desc { width: 188px; }
+.m-result .activity a:hover, .m-result .skuactivity a:hover { text-decoration: none; }
+.m-result .activity img, .m-result .skuactivity img { width: 262px; height: 262px; padding: 0px; }
+.m-result .activity .desc, .m-result .skuactivity .desc { padding: 0px; width: 100%; text-align: center; color: rgb(255, 255, 255); }
+.m-result .activitytitle { font-size: 22px; line-height: 24px; }
+.m-result .activity .activitytitle { padding-top: 15px; margin-bottom: 6px; }
+.m-result .skuactivity .activitytitle { padding-top: 32px; margin-bottom: 10px; }
+.m-result .activitydesc { font-size: 16px; line-height: 18px; }
+.m-result .activity .titlewrap { height: 125px; position: relative; }
+.m-result .skuactivity .titlewrap { height: 169px; }
+.m-result .activityentry { width: 142px; height: 32px; margin: 15px auto; background-color: rgba(3, 3, 3, 0.25); border-radius: 2px; line-height: 32px; font-size: 14px; }
+.m-result .skuactivity .activityentry { margin: 20px auto 30px; }
+.m-result .goods.activity:hover .goodswrap, .m-result .goods.skuactivity:hover .goodswrap { border-color: transparent; }
+.m-result .entryicon { display: inline-block; width: 14px; height: 14px; vertical-align: middle; background-image: url("../images/64b9f681e3a62aef5fd41ef72c67383d77a51700.png"); }
+.m-result .goods .title { height: 40px; margin-top: 5px; overflow: hidden; font-size: 13px; line-height: 20px; overflow-wrap: break-word; word-break: break-all; }
+.m-result-2 .goods .title { margin-top: 7px; }
+.m-result .title:hover { color: rgb(210, 33, 71); }
+.m-result .goods .price { height: 24px; color: rgb(210, 33, 71); }
+.m-result .price .cur { display: inline-block; margin-right: 2px; font-weight: bold; font-size: 22px; line-height: 24px; }
+.m-result-2 .price .cur { font-size: 16px; }
+.m-result .cur .betext { font-size: 12px; font-weight: normal; }
+.m-result .price i { font-size: 12px; font-weight: bold; }
+.m-result .combinedLabel { position: relative; top: -4px; display: inline-block; padding: 0px 4px; border: 1px dotted rgb(210, 33, 71); font-size: 12px; color: rgb(210, 33, 71); font-weight: bold; line-height: 18px; }
+.m-result-2 .combinedLabel { border: 1px solid rgb(210, 33, 71); margin-left: 2px; }
+.m-result-2 .combinedLabel:first-child { margin-left: 0px; }
+.m-result .marketprice { float: right; color: rgb(153, 153, 153); line-height: 24px; }
+.m-result-2 .marketprice { margin-left: 5px; float: none; }
+.m-result .goods .comments { float: left; position: relative; display: inline-block; padding-left: 20px; color: rgb(51, 51, 51); font-weight: bold; }
+.m-result-2 .goods .comments { float: right; color: rgb(153, 153, 153); margin-top: 7px; font-weight: normal; }
+.m-result-2 .benefit { color: rgb(227, 20, 54); padding: 3px 5px; border: 1px solid rgb(227, 20, 54); display: inline-block; }
+.m-result .comments .icon { display: block; position: absolute; top: 3px; left: 2px; width: 12px; height: 14px; background-position: 0px -230px; }
+.m-result .goods .proPlace { float: right; max-width: 110px; color: rgb(153, 153, 153); }
+.m-result .soldout { position: absolute; top: 0px; right: 0px; width: 59px; height: 60px; background-position: 0px -98px; }
+.m-result .activityflag { position: absolute; top: 15px; left: 15px; height: 42px; }
+.m-result .activityflag span { display: inline-block; float: left; width: 42px; height: 42px; margin-right: 4px; border-radius: 21px; font-size: 14px; color: rgb(255, 255, 255); text-align: center; line-height: 42px; }
+.m-result .hot { background-color: rgb(243, 56, 95); }
+.m-result .goods .ranksTap { position: absolute; top: 1px; left: 1px; width: auto; height: auto; max-width: 75px; max-height: 75px; }
+.m-result .danpin { background-color: rgb(245, 52, 94); }
+.m-result .zhengdan { background-color: rgb(255, 166, 77); }
+.m-result .new { background-color: rgb(187, 119, 242); }
+.m-result .promotion .title, .m-result .promotion h2 { height: 20px; width: 234px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.m-result-2 .promotion .title, .m-result-2 .promotion h2 { white-space: normal; width: 188px; height: 40px; font-size: 12px; line-height: 19px; }
+.m-result.m-result-2 .goods:hover .promotion .title, .m-result.m-result-2 .goods:hover .promotion h2 { height: 40px; }
+.m-result .saelsinfo { position: relative; width: 234px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 20px; font-size: 13px; color: rgb(210, 33, 71); }
+.m-result .saelsinfo .activity { display: inline-block; height: 16px; padding: 0px 6px; margin-right: 4px; text-align: center; line-height: 16px; color: rgb(255, 255, 255); font-size: 12px; }
+.m-result .saelsinfo .danpin { background-color: rgb(210, 33, 71); }
+.m-result .saelsinfo .zhengdan { background-color: rgb(255, 166, 77); }
+.m-result .saelsinfo .large { width: 50px; }
+.m-result .goodsinfo { margin-top: 10px; }
+.m-result .goods:hover .title { min-height: 40px; height: auto; }
+.m-result .goods:hover .promotion .title, .m-result .goods:hover .promotion h2, .m-result .goods:hover .promotion .saelsinfo { height: auto; min-height: 20px; white-space: normal; }
+.m-result-2 .goods:hover .promotion .intro { height: 20px; }
+.m-result .goods:hover { z-index: 99; }
+.m-result .goods:hover .goodswrap { border: 1px solid rgb(210, 33, 71); box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+.m-result .gooods.activity:hover .goodswrap, .m-result .goods.skuactivity:hover .goodswrap { box-shadow: none; }
+.m-result .goods:hover .favbtn, .m-result .goods:hover .arrivenotice { display: block; }
+.m-result .storageMsg { position: absolute; left: 0px; bottom: 10px; width: 100%; height: 24px; line-height: 24px; text-align: center; font-size: 12px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5); }
+.m-result .prepriceTag { position: absolute; bottom: 10px; right: 10px; width: 90px; height: 63px; }
+.m-result .prepriceTag img { width: 100%; height: 100%; opacity: 1; padding: 0px; }
+.m-result .prepriceTag .price { position: absolute; left: 0px; bottom: 6px; width: 100%; text-align: center; font-size: 14px; font-weight: bold; overflow: hidden; white-space: nowrap; color: rgb(255, 255, 255); }
+.m-result .prepriceTag .price b { font-size: 20px; font-weight: bold; }
+.orderPages .jumptoTip, .orderPages .jumpto, .orderPages .jumptoBtn, .orderPages .jumptoTxt { display: inline-block; }
+.jumptoTip { margin: 0px 8px; }
+.m-empty { position: relative; width: 1090px; height: 180px; margin: 30px 7px 10px; padding-top: 70px; background-color: rgb(255, 255, 255); }
+.m-empty-1 { margin: 30px 0px 0px; }
+.m-empty .content { margin-left: 450px; font-size: 14px; }
+.m-empty .errorimg { position: absolute; top: 54px; left: 290px; display: block; width: 144px; height: 121px; background: transparent url("empty.png") no-repeat scroll 0px 0px; }
+.m-empty-2 .content { margin-left: 430px; }
+.m-empty-2 .errorimg { left: 270px; }
+.m-empty .firstline { font-size: 18px; }
+.m-empty .keytext { display: inline-block; max-width: 300px; vertical-align: top; color: rgb(210, 33, 71); }
+.m-empty .countDownTxt { font-weight: bold; margin-right: 3px; vertical-align: baseline; color: rgb(210, 33, 71); }
+.m-empty.m-empty-3 .content { margin-left: 440px; }
+.m-empty.m-empty-3 .btn { display: inline-block; padding: 0px 14px; margin-right: 10px; height: 30px; line-height: 30px; background: rgb(227, 19, 55) none repeat scroll 0% 0%; font-size: 14px; color: rgb(255, 255, 255); border-radius: 1px; }
+.m-empty.m-empty-3 .btn:hover { text-decoration: none; }
+.m-empty.m-empty-3 .firstline { margin-bottom: 20px; font-size: 18px; line-height: 18px; }
+.m-empty.m-empty-3 .keytext { font-weight: bold; }
+.m-empty.m-empty-3 .errorimg2 { position: absolute; top: 48px; left: 290px; display: block; width: 122px; height: 99px; background: transparent url("redirect.png") no-repeat scroll 0px 0px; }
+.m-pagination li { cursor: pointer; background-color: rgb(255, 255, 255); }
+.m-pagination li:hover { background-color: rgb(243, 243, 243); }
+.m-search .m-checkbox { position: relative; float: left; margin-left: 15px; line-height: 36px; font-size: 13px; cursor: pointer; }
+.m-search .m-priceBox { position: relative; float: left; width: 190px; height: 36px; line-height: 36px; margin-left: 20px; font-size: 14px; }
+.m-search .m-priceBox .ipt { width: 48px; line-height: 18px; padding-left: 5px; border: 1px solid rgb(221, 221, 221); }
+.m-search .m-priceBox .btn { display: none; line-height: 16px; margin-left: 8px; padding: 2px 8px; border-radius: 4px; color: rgb(255, 255, 255); background: rgb(210, 33, 71) none repeat scroll 0% 0%; border: 0px none; cursor: pointer; }
+.m-search .m-priceBox:hover .priceInputs { position: absolute; left: -5px; padding: 0px 5px; height: 30px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; z-index: 99; }
+.m-priceBox:hover .btn { display: inline; }
+.m-priceBox .ipt:hover { border: 1px solid rgb(115, 158, 204); box-shadow: 0px 0px 6px 1px rgb(115, 158, 204); }
+.m-search .promoteIcon { position: absolute; top: 6px; left: 22px; }
+.m-search .shoptagicon { display: inline-block; width: 18px; height: 9px; background-position: 0px -380px; }
+.m-search .shoptaglogo { margin-right: 5px; width: 16px; height: 16px; vertical-align: sub; }
+.m-loading { height: 60px; width: 80px; margin: 80px 426px; padding: 40px 0px 0px 100px; background: rgb(243, 243, 243) url("loading-search.gif") no-repeat scroll 0px 0px; }
+.s-color { color: rgb(51, 51, 51); }
+.search-recom { position: relative; width: 1090px; margin: 0px auto; }
+#recomGoodsWrap, #recent, .newRecomWrap { margin-top: 10px; }
+#recent h4 { padding-right: 17px; }
+.newRecomItemWrap, .generalize { background-color: rgb(255, 255, 255); }
+.m-brand { height: 120px; padding: 8px 40px 8px 20px; margin-bottom: 10px; background-color: rgb(255, 255, 255); }
+.m-brand img { display: block; float: left; width: 120px; height: 120px; }
+.m-brand .info { margin-top: 20px; margin-left: 140px; line-height: 24px; color: rgb(51, 51, 51); }
+.m-brand .title { height: 26px; line-height: 26px; }
+.m-brand .brandname { float: left; font-size: 22px; }
+.m-brand a { color: rgb(51, 51, 51); }
+.m-brand a:hover .brandname { color: rgb(210, 33, 71); }
+.m-brand .detail { position: relative; height: 46px; margin-top: 10px; color: rgb(102, 102, 102); overflow: hidden; font-size: 14px; line-height: 24px; }
+.m-brand .follow { display: block; float: left; width: 68px; height: 24px; margin: 1px 10px; border-radius: 12px; color: rgb(255, 255, 255); background-color: rgb(207, 44, 72); cursor: pointer; text-align: center; line-height: 24px; font-size: 12px; }
+.m-brand .follow:hover { background-color: rgb(245, 52, 94); }
+.m-brand .unfo { background-color: rgb(207, 44, 72); }
+.m-brand .unfo:hover { background-color: rgb(221, 221, 221); color: rgb(51, 51, 51); }
+.m-brand .info b { position: relative; top: -1px; font-size: 12px; font-family: "iconfont"; }
+.m-brand .dot .dotshow { display: block; }
+.m-brand .dotshow { display: none; font-weight: bold; position: absolute; bottom: -2px; right: 0px; padding: 0px 15px 1px 42px; background: transparent url("ellipsis_bg.png") repeat-y scroll 0% 0%; }
+.m-brand2 { height: 270px; margin: 20px 0px 10px; overflow: hidden; background-color: rgb(255, 255, 255); }
+.m-brand2 .detailImg { display: block; float: left; width: 540px; height: 270px; }
+.m-brand2 .content { margin-left: 540px; width: 510px; padding: 20px; }
+.m-brand2 .info { height: 70px; }
+.m-brand2 .logo { display: block; float: left; width: 68px; height: 68px; border: 1px solid rgb(234, 234, 234); }
+.m-brand2 .bname { float: left; margin-left: 12px; height: 70px; width: 280px; overflow: hidden; }
+.m-brand2 .title { margin-top: 10px; font-size: 18px; line-height: 28px; font-weight: bold; }
+.m-brand2 .sold { font-size: 12px; line-height: 24px; }
+.m-brand2 .sold span { color: rgb(210, 33, 71); letter-spacing: 1px; }
+.m-brand2 .from { float: right; margin-top: 15px; }
+.m-brand2 .from img { display: block; float: left; }
+.m-brand2 .from span { display: block; margin-left: 50px; line-height: 20px; font-size: 12px; color: rgb(153, 153, 153); }
+.m-brand2 .intro { margin-top: 10px; font-size: 14px; line-height: 24px; overflow-wrap: break-word; word-break: break-all; }
+.m-brand2 .detailshort { font-size: 12px; line-height: 20px; overflow: hidden; }
+.m-brand2 .focus { height: 24px; margin-top: 20px; }
+.m-brand2 .follow { display: block; float: left; width: 69px; height: 24px; line-height: 24px; border-radius: 12px; background-color: rgb(210, 33, 71); color: rgb(255, 255, 255); font-size: 12px; text-align: center; cursor: pointer; }
+.m-brand2 .follow b { position: relative; top: -1px; font-size: 12px; font-family: "iconfont"; font-weight: bold; }
+.m-brand2 .follow:hover { background-color: rgb(245, 52, 94); }
+.m-brand2 .unfo { background-color: rgb(210, 33, 71); }
+.m-brand2 .unfo:hover { background-color: rgb(221, 221, 221); color: rgb(51, 51, 51); }
+.m-timerbox { height: 24px; margin: 20px 0px; padding: 8px 0px; background-color: rgb(255, 255, 255); line-height: 24px; text-align: center; }
+.m-timerbox .text { display: inline-block; padding: 0px 30px 0px 21px; color: rgb(210, 33, 71); background-position: 0px -161px; }
+.m-timerbox a, .m-timerbox a:hover { display: inline-block; margin-left: 10px; color: rgb(210, 33, 71); text-decoration: underline; }
+.u-gap { display: inline-block; width: 10px; margin: 0px 5px; font-family: simsun; color: rgb(153, 153, 153); font-weight: bold; }
+.m-recommend { margin: 0px auto; }
+.m-recommend .tip { height: 46px; padding-left: 25px; margin: 0px 7px 10px; background-color: rgb(255, 247, 217); line-height: 46px; }
+.m-recommend .tip1 { background-color: rgb(255, 255, 255); color: rgb(153, 153, 153); }
+.m-recommend .noresult { position: relative; height: 70px; padding: 10px 20px 10px 120px; margin: 20px 7px; background-color: rgb(255, 255, 255); }
+.m-recommend .noresult img { display: block; position: absolute; top: 2px; left: 20px; width: 80px; height: 76px; }
+.m-recommend .noresult .apology { font-size: 16px; line-height: 40px; }
+.m-recommend .more { margin-left: 15px; }
+.m-recommend .fontype span { color: rgb(210, 33, 71); }
+.m-recommend .fontype a { color: rgb(51, 51, 51); }
+.m-recommend .fontype a:hover, .m-recommend .fontype1 a:hover { color: rgb(210, 33, 71); }
+.m-recommend .fontype1 a { color: rgb(153, 153, 153); }
+.m-skulist { position: relative; width: 234px; padding: 0px 14px 11px; }
+.m-skulist .skuwrap { height: 32px; }
+.m-skulist li { float: left; position: relative; width: 30px; height: 30px; margin-right: 4px; overflow: hidden; border: 1px solid rgb(221, 221, 221); cursor: pointer; }
+.m-skulist .cur { border: 1px solid rgb(210, 33, 71); }
+.m-skulist img { display: block; width: 30px; height: 30px; }
+.m-skulist .arrow { display: inline-block; position: absolute; top: 6px; width: 20px; height: 20px; cursor: pointer; }
+.m-skulist .arrow-1 { left: 14px; background-position: -1px -307px; }
+.m-skulist .arrow-2 { right: 14px; background-position: -39px -308px; }
+.m-skulist .arrowdis-1 { background-position: -1px -279px; cursor: default; }
+.m-skulist .arrowdis-2 { background-position: -39px -279px; cursor: default; }
+.m-skulist .scroll { position: relative; width: 178px; margin: 0px 30px; overflow: hidden; }
+.m-skulist .scroll ul { position: absolute; top: 0px; left: 0px; transition: left 0.4s ease 0s; }
+.m-skulist li .mask { position: absolute; top: 0px; left: 0px; width: 30px; height: 30px; background-color: rgb(0, 0, 0); opacity: 0.3; }
+.m-result .colorsku, .m-result .goods.skuactivity { height: 431px; }
+.f-mrl5 { margin-left: 5px; }
+.m-search .focusNumber { color: rgb(178, 178, 178); margin-left: 5px; }
+.m-search .focusNumber .fbold { font-weight: bold; color: rgb(51, 51, 51); font-size: 14px; }
+.m-checkbox em { width: 14px; height: 14px; }
+.m-search .loadingbox { text-align: center; padding: 100px 0px; }
+.m-shop { display: block; position: relative; width: 1090px; height: 120px; margin: 20px auto 0px; overflow: hidden; text-decoration: none; }
+.m-shop .logo { display: block; float: left; width: 80px; height: 80px; margin: 20px 0px 20px 20px; border-radius: 4px; }
+.m-shop .detail { position: relative; float: right; margin: 10px; padding: 6px 10px 10px; width: 260px; height: 84px; font-size: 12px; color: rgb(255, 255, 255); }
+.m-shop .bg { display: block; position: absolute; right: 10px; top: 10px; width: 280px; height: 100px; background-color: rgb(0, 0, 0); opacity: 0.35; }
+.m-shop .title { width: 260px; font-size: 14px; line-height: 22px; font-weight: bold; }
+.m-shop .shoptag { width: 188px; padding-left: 72px; background-position: 0px -344px; }
+.m-shop .content { width: 260px; height: 36px; line-height: 18px; overflow: hidden; }
+.m-shop .entry { display: inline-block; padding: 0px 5px; margin-top: 6px; border: 1px solid rgb(255, 255, 255); line-height: 18px; }
+.m-search .selfflag { margin-top: 4px; }
+.m-search .selfflag span { color: rgb(153, 153, 153); }
+.m-search .selfflag a { width: 234px; height: 18px; color: rgb(102, 102, 102); text-decoration: underline; overflow: hidden; overflow-wrap: break-word; word-break: break-all; }
+.m-search .selfflag a:hover { color: rgb(210, 33, 71); text-decoration: underline; }
+.z-nomprice .m-result .marketprice { display: none; }
+.m-result-2 .u-gtag { display: inline-block; margin-left: 5px; height: 18px; line-height: 18px; border: 1px solid rgb(227, 20, 54); padding: 0px 4px; color: rgb(227, 20, 54); }
+.m-result-2 .u-gtag:first-child { margin-left: 0px; }
+.m-addrbox { float: left; height: 36px; }
+.m-addrbox .tit { float: left; height: 36px; line-height: 36px; font-size: 12px; }
+.m-addrbox .addrselect { float: left; margin: 5px 0px 0px 10px; }
+.m-search.m-search-1 .resultinfo { margin-top: 0px; }
+.m-search.m-search-1 .resultinfo > * { margin-top: 10px; margin-bottom: 0px; }
+.m-search.m-search-1 .resultinfo .detail-search { position: relative; font-size: 12px; float: left; margin-right: 10px; }
+.m-search.m-search-1 .resultinfo .detail-search .w-icon { position: absolute; right: 8px; top: 3px; cursor: pointer; }
+.m-search.m-search-1 .resultinfo .detail-search input { width: 105px; padding: 5px 24px 5px 5px; height: 12px; border: 1px solid rgb(204, 204, 204); margin-top: -1px; }
+.m-search.m-search-1 .resultinfo .detail-search :-moz-placeholder { font-size: 12px; }
+.m-search.m-search-1 .resultinfo .detail-search *::-moz-placeholder { font-size: 12px; }
+.m-search.m-search-1 .resultinfo a.catCrumbs { float: left; font-size: 12px; }
+.m-search.m-search-1 .resultinfo .u-gap { margin-left: 8px; margin-right: 6px; }
+.m-search.m-search-1 .resultinfo .all { margin-bottom: 0px; }
+.m-search.m-search-1 .resultinfo .chosen { color: rgb(210, 33, 71); box-sizing: border-box; margin: 10px 10px 0px 0px; padding-right: 22px; padding-left: 5px; }
+.m-search.m-search-1 .resultinfo .chosen.ellipsis { max-width: 165px; }
+.m-search.m-search-1 .resultinfo .chosen:last-child { margin-right: 0px; }
+.m-search.m-search-1 .resultinfo .chosen:hover { text-decoration: none; }
+.m-search.m-search-1 .resultinfo .chosen:hover b { color: rgb(255, 255, 255); }
+.m-search.m-search-1 .resultinfo .chosen b { padding: 0px 3px; line-height: 20px; color: rgb(210, 33, 71); font-size: 14px; }
+.m-search.m-search-1 .resultinfo .chosen span.value { display: inline-block; max-width: 136px; overflow: hidden; white-space: nowrap; }
+.m-search.m-search-1 .crumbs-attr-area { margin-top: 0px; }
+.m-search.m-search-1 .crumbs-attr-area > * { margin-top: 10px; }
+.m-search.m-search-1 .name { font-size: 12px; line-height: 12px; padding-top: 12px; width: 85px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.m-search.m-search-1 .gnum { float: left; margin-left: 0px; }
+.m-search.m-search-1 .m-classify .name a, .m-search.m-search-1 .m-classify .name a:hover { color: rgb(51, 51, 51); }
+.m-search.m-search-1 .m-classify .letterBox { margin-left: 110px; }
+.m-search.m-search-1 .m-classify .letterBox li { margin: 0px 4px; }
+.m-search.m-search-1 .m-classify .line2height.line1height .hdbrands2 { height: 24px; }
+.m-search.m-search-1 .m-classify .line2height .hdbrands2 { height: 45px; }
+.m-search.m-search-1 .m-classify .hdbrands { margin-left: 110px; padding: 8px 120px 4px 0px; }
+.m-search.m-search-1 .m-classify .hdbrands .button-group { display: none; }
+.m-search.m-search-1 .m-classify .hdbrands.multi-mode .button-group { display: block; }
+.m-search.m-search-1 .m-classify .hdbrands.multi-mode .hdbrands2 { height: auto ! important; }
+.m-search.m-search-1 .m-classify .hdbrands.multi-mode a.multi-active { padding-right: 25px; border: 1px solid rgb(210, 33, 71); color: rgb(210, 33, 71); }
+.m-search.m-search-1 .m-classify .hdbrands.multi-mode a.multi-active::after { font-family: "iconfont" ! important; font-size: 12px; font-weight: bold; -webkit-text-stroke-width: 0.2px; content: ""; position: absolute; right: 0px; top: 0px; padding: 3px; background: rgb(210, 33, 71) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.m-search.m-search-1 .m-classify .hdbrands .button-group { box-sizing: border-box; font-size: 0px; text-align: center; padding-bottom: 10px; margin-top: 5px; }
+.m-search.m-search-1 .m-classify .hdbrands .button-group .btn { display: inline-block; width: 48px; height: 24px; line-height: 24px; text-align: center; font-size: 12px; cursor: pointer; }
+.m-search.m-search-1 .m-classify .hdbrands .button-group .save { background: rgb(204, 204, 204) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.m-search.m-search-1 .m-classify .hdbrands .button-group .save.active { background: rgb(210, 33, 71) none repeat scroll 0% 0%; }
+.m-search.m-search-1 .m-classify .hdbrands .button-group .cancel { border: 1px solid rgb(170, 170, 170); color: rgb(51, 51, 51); margin-left: 10px; width: 46px; height: 22px; line-height: 22px; }
+.m-search.m-search-1 .m-classify .hdbrands .button-group .cancel:hover { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-color: rgb(0, 0, 0); }
+.m-search.m-search-1 .m-classify .brands a { position: relative; box-sizing: border-box; margin-right: 18px; margin-bottom: 4px; padding: 3px 5px; width: 65px; border: 1px solid transparent; font-size: 12px; line-height: 12px; }
+.m-search.m-search-1 .m-classify .item-multiple { display: inline-block; box-sizing: border-box; padding: 0px 5px; height: 20px; line-height: 20px; color: rgb(51, 51, 51); font-size: 12px; border: 1px solid rgb(221, 221, 221); }
+.m-search.m-search-1 .m-classify .item-multiple.active, .m-search.m-search-1 .m-classify .item-multiple:hover { cursor: pointer; color: rgb(210, 33, 71); border-color: rgb(210, 33, 71); }
+.m-search.m-search-1 .m-classify .item-multiple.active .iconfont, .m-search.m-search-1 .m-classify .item-multiple:hover .iconfont { color: rgb(210, 33, 71); }
+.m-search.m-search-1 .m-classify .item-multiple.hide { display: none; }
+.m-search.m-search-1 .m-classify .item-multiple .iconfont { font-size: 12px; color: rgb(51, 51, 51); height: 20px; line-height: 20px; position: relative; }
+.m-search.m-search-1 .m-classify .item-multiple .iconfont.down, .m-search.m-search-1 .m-classify .item-multiple .iconfont.up { margin-left: 5px; }
+.m-search.m-search-1 .m-classify .item-multiple .iconfont.up { display: none; }
+.m-search.m-search-1 .m-classify .attr-items { position: relative; }
+.m-search.m-search-1 .m-classify .attr-items a.dditem { float: left; position: relative; border: 1px solid rgb(221, 221, 221); padding: 3px 5px; line-height: 12px; font-size: 12px; margin: 0px 0px 4px 20px; cursor: pointer; color: rgb(51, 51, 51); }
+.m-search.m-search-1 .m-classify .attr-items a.dditem .iconfont { font-size: 12px; width: 12px; height: 12px; line-height: 12px; margin-left: 2px; color: rgb(205, 205, 205); }
+.m-search.m-search-1 .m-classify .attr-items a.dditem .up { display: none; }
+.m-search.m-search-1 .m-classify .attr-items a.dditem .down { display: inline-block; }
+.m-search.m-search-1 .m-classify .attr-items a.dditem.active { border-width: 1px; border-style: solid; border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(255, 255, 255); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; padding-bottom: 7px; margin-bottom: 0px; color: rgb(51, 51, 51); z-index: 101; text-decoration: none; }
+.m-search.m-search-1 .m-classify .attr-items a.dditem.active .up { display: inline-block; }
+.m-search.m-search-1 .m-classify .attr-items a.dditem.active .down { display: none; }
+.m-search.m-search-1 .m-classify .morewrap { top: 12px; }
+.m-search.m-search-1 .m-classify .morewrap .item-multiple { float: right; margin: -4px 15px 0px 0px; }
+.m-search.m-search-1 .m-classify .more { margin-left: 0px; font-size: 12px; }
+.m-search.m-search-1 .m-classify .more span { top: 3px; left: 30px; }
+.m-search.m-search-1 .m-classify .dropdownlist-content { position: absolute; left: 0px; top: 31px; width: 100%; border: 1px solid rgb(170, 170, 170); background: rgb(255, 255, 255) none repeat scroll 0% 0%; z-index: 100; font-size: 12px; line-height: 12px; display: none; padding-bottom: 11px; }
+.m-search.m-search-1 .m-classify .dropdownlist-content a { color: rgb(51, 51, 51); }
+.m-search.m-search-1 .m-classify .dropdownlist-content a:hover { color: rgb(210, 33, 71); text-decoration: none; }
+.m-search.m-search-1 .m-classify .dropdownlist-content ul { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.m-search.m-search-1 .m-classify .dropdownlist-content list { padding-bottom: 15px; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .list { position: relative; padding-right: 65px; margin-bottom: 5px; margin-left: -8px; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .list .item-multiple { position: absolute; right: 9px; top: 10px; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .button-group { display: none; box-sizing: border-box; font-size: 0px; margin-top: 8px; text-align: center; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .button-group .btn { display: inline-block; width: 48px; height: 24px; line-height: 24px; text-align: center; font-size: 12px; cursor: pointer; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .button-group .save { background: rgb(204, 204, 204) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.m-search.m-search-1 .m-classify .dropdownlist-content .button-group .save.active { background: rgb(210, 33, 71) none repeat scroll 0% 0%; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .button-group .cancel { width: 46px; height: 22px; line-height: 22px; border: 1px solid rgb(170, 170, 170); color: rgb(51, 51, 51); margin-left: 10px; }
+.m-search.m-search-1 .m-classify .dropdownlist-content .button-group .cancel:hover { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-color: rgb(0, 0, 0); }
+.m-search.m-search-1 .m-classify .dropdownlist-content .list-item { float: left; position: relative; margin: 11px 0px 0px 17px; cursor: pointer; padding: 3px 22px 3px 5px; border: 1px solid transparent; }
+.m-search.m-search-1 .m-classify .dropdownlist-content.multi-mode .button-group { display: block; }
+.m-search.m-search-1 .m-classify .dropdownlist-content.multi-mode .list-item.multi-active { border: 1px solid rgb(210, 33, 71); color: rgb(210, 33, 71); }
+.m-search.m-search-1 .m-classify .dropdownlist-content.multi-mode .list-item.multi-active::after { font-family: "iconfont" ! important; font-size: 12px; font-weight: bold; -webkit-text-stroke-width: 0.2px; content: ""; position: absolute; right: 0px; top: 0px; padding: 3px; background: rgb(210, 33, 71) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.m-search.m-search-1 .m-classify .icon.icon-tridown { display: inline-block; transform: rotate(-90deg); font-size: 12px; color: rgb(203, 203, 203); }
+.m-search.m-search-1 .m-classify.property .brands a { width: auto; margin-right: 14px; padding-right: 25px; }
+.icon-iconfontclose::before { content: ""; }
+.icon-miniplus::before { content: ""; }
+.icon-paixujiantouxia::before { content: ""; }
+.icon-paixujiantoushang::before { content: ""; }
+.icon-tridown::before { content: ""; }
+.icon-right01::before { content: ""; }

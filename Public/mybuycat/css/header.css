@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*背景图合并css*/
+.logosearch .logo b,#cart,.kufubz,.kufubz a:hover,.btn_buy a b,.btn_addsc a b,.btn_ljgm a b,.login_btn input,.zhuce a,.buy-jiesuan a,.btns a,.cart-button a,.cart-button1 a,.upPic .upPicBg
+,.lc_btn input,.star{ background:url(../images/quantu1.png) no-repeat;}
+.shoppingnum,.jiesuan .gobuy a,.chufahd span,.feed-price-wrap,.item-zoushi,.item-time .shizhong,.fore a b,.thumb1
+,.thumb2,.thumb1one,.thumb2two,#view-bigimg,.selcted b,.wrap-input a,.master s,.suits s,.infos s,.tc_btn,.rightMainTop .Bj,.paixu ul li b
+,.opre a,.login_title,.zhuce_title,.success b,.mt s,.pageTitle .iconCar2,.priceCheck .proDetailSprite,
+.rollBox .LeftBotton,.rollBox .RightBotton,.success,.innerNote span,.orders-table dd.none .tips,.order .rev_show_detail b,.order .show_detail b
+,.prompt01 .item02 .btnnn,.dingyi .tips{background:url(../images/quantu2.png) no-repeat;}
+
+/*头部开始*/
+.ar{ text-align:right;}
+.header{ height:auto;}
+.ld{ position:relative;zoom:1;}
+.xdh{width:100%;border-bottom:1px solid #eee;line-height:30px;background:#f7f7f7;}
+.xdh .w{height:30px;}
+.m{ margin-top:13px;}
+.w{margin:0 auto; width:1000px;}
+.fl{float:left;}
+.fr{float:right;}
+.xdh li{height:30px;padding:0 11px 0 12px; float:left;}
+.xdh .fl .shoucang{padding-left:16px;z-index:1; padding-top:1px;}
+.xdh .fl b{width:13px;height:13px;background:url(../images/shoucang.png) no-repeat;top:8px;left:0px; position:absolute;cursor:pointer;}
+.xdh .fl .menuSp{color:#666;}
+.xdh .fl .menuSp a{margin-left:5px;}
+.xdh .fr{height:30px;}
+.xdh .fr s{top:9px;left:0;width:0;height:12px;border-left:1px solid #888787;overflow:hidden; position:absolute;}
+
+.logosearch{height:68px;padding:13px 0;}
+.logosearch .logo a{ display:inline-block; margin-left:18px; float:left;}
+.logosearch .logo b{ width:128px; height:60px; display:block;float:left; margin:2px 0 0 10px;}
+.logosearch .logo b.hy-zhuce{ background-position:0px -634px;}
+.logosearch .logo b.hy-denglu{ background-position:0px -565px;}
+.ppbz .tesefuwu{ width:449px;height:36px; background:url(../images/tese.jpg) no-repeat; margin-top:15px;}
+/*搜索部分*/
+.search{ width:537px; position:relative;z-index:5;zoom:1; margin-left:25px;}
+.search .kWords{color:#999;overflow:hidden; margin-left:5px;}
+.search .kWords a{padding:0 5px;color:#999;}
+.search .kWords a.zuire{color:#e31d1e;}
+.search .kWords a:hover{color:#f60;}
+.searchI{margin-top:4px;}
+.searchW{padding:0 0 0 2px;}
+.searchW input{width:525px;height:38px;line-height:38px;border:2px solid #ddd;color:#7D7D7D; padding-left:5px;}
+
+.associate{display:none;position:absolute;top:63px;left:2px; height:auto;width:528px;border:1px #ddd solid;padding:2px;background:#FFF;overflow:hidden;z-index:7;}
+.associate ul,.associate ul li{overflow:hidden;}
+.associate ul li{width:100%;height:26px;line-height:26px;cursor:pointer;}
+.associate ul .assson{background:#E6F0FF;}
+.associate em{float:left;width:200px;overflow:hidden; font-weight:bold; color:#666;}
+.associate span{float:right;}
+
+.inBut{ width:47px; height:42px; position:absolute; background:url(../images/sousuo.jpg) no-repeat; border:none;cursor:pointer;right:1px;top:22px;}
+
+/*我的购物车部分*/
+.shoppingbuy{ width:185px;position:relative; z-index:5;margin:24px 38px 0 0; display:inline;}
+.shoppingnum{width:42px; height:26px; display:block; position:absolute; z-index:5; color:#FFF; font-weight:bold;text-align:center;
+line-height:26px; font-size:18px;top:-15px;left:26px; background-position:0px -2px;}			 
+#cart{display:block;width:185px;height:40px;}
+#cart:hover{ background-position:0px -38px;}	
+.cart_content{position:absolute; z-index:7; width:285px; height:auto;border:1px solid #ddd;top:37px;left:-103px;background:#FFF;}	
+.cart_content_null{width:260px;text-align:center;padding:20px;color:#666;font-size:14px;}
+.cart_content_all{ width:285px;height:auto;}
+.p1{height:25px; line-height:25px;color:#666; padding-left:10px;}
+.dlsp{ width:270px; height:69px; border-top:1px dotted #ddd; padding:10px 0 0 10px; margin-top:10px;}	 
+.dlsp dt{ float:left; width:57px;height:57px; padding:5px 0 0 5px; border:1px solid #ddd;}
+.dlsp dd{ color:#666; line-height:18px; width:194px; overflow:hidden; margin-left:10px; float:left;}
+.dlsp dd a:hover{text-decoration:underline;}
+.dlsp dd .jiagezhan{ display:block;color:#666; margin-top:5px;}
+.dlsp dd .jiagezhan strong{color:#f60;}
+.dlsp dd .jiagezhan b{ color:#999px; font-weight:normal; margin-left:79px;}
+.jiesuan{ background:#f5f5f5;color:#999; height:100px;}
+.jiesuan b,.jiesuan strong{ color:#f60;margin:0 10px 0 5px;}
+.jiesuan strong{ font-size:16px;}
+.jiesuan strong s{ font-size:12px; font-weight:normal;}
+.jiesuan span{ display:block; font-weight:bold; margin-right:10px; margin-top:2px;}
+.jiesuan .gobuy a{width:108px; height:35px;display:block; margin:10px 0 0px 170px; background-position:0px -39px;}
+

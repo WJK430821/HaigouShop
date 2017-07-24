@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input,select,textarea {font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+
+/*主体内容开始*/
+.main{font-family:"Microsoft Yahei";}
+.left_list{ width:780px; height:auto; overflow:hidden;}
+
+.s_mod{ width:778px; border:1px solid #dadada; height:239px; margin-bottom:10px;}
+.s_mod:hover{border:1px solid #00479d;}
+.s_pic{ overflow:hidden;padding:30px 20px 0px 25px; display:inline;}
+
+.pp_logo{margin-bottom:10px;}
+.s_title{font-size:14px;color:#3d46ff; margin-bottom:10px;}
+.s_title a{color:#3d46ff;}
+.s_title a:hover,.rx_title a:hover{ color:#f60; text-decoration:underline;}
+.s_sj,.s_input{color:#ed6d00; font-weight:bold; font-size:14px;margin-bottom:15px;}
+.s_input{ width:86px; height:30px; line-height:30px; border:1px solid #0152a1; background:#0152a1;-webkit-border-radius:5px;border-radius:5px; text-align:center; color:#fff;}
+.s_input a{width:86px; height:30px; color:#FFF; display:block;}
+.cp_img{ width:509px;}
+.peijian{ width:210px;}
+
+.mainright{ height:auto;}
+.peijian_ul{clear:both;width:202px;}
+.peijian_ul h2{ line-height:25px; padding:10px 0 0px 0px;}
+.peijian_ul li{ float:left; border:none;line-height:25px; width:93px;}
+
+.rexiao_list{ border:1px solid #ddd; margin-top:10px;*margin-top:8px;}
+.rexiao_list ul li{ padding-bottom:10px;}
+.rexiao_list h2{font-weight:400; text-indent:0.5em; font-size:14px; padding:5px 0;}
+.rx_img{ margin-bottom:10px; text-align:center;}
+.rx_title{ width:200px; overflow:hidden; line-height:22px; padding-left:10px;}
+.rx_title a{ color:#d3d3d3}
+.rx_pice{ padding-left:10px;}
+.rx_pice .rx_pr{ color:#333; font-size:16px;}
+.rx_pice .rx_xl{ color:#999; font-size:14px; margin-left:80px;}

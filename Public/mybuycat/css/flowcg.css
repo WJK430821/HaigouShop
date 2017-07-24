@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+/*头部*/
+.cartjindu2 .step1{background:#a7b0b5 url(../images/cart1.png) center right no-repeat; width:252px;}
+.cartjindu2 .step2{background:#a7b0b5 url(../images/cart2.png) center right no-repeat; width:260px;}
+.cartjindu2 .step3{background:#26539c;}
+
+/*主体部分*/
+.innerNote{color:#00479d;font:bold 20px/40px '微软雅黑';height:46px;padding:8px 0px 0px 358px; overflow:hidden;}
+.innerNote span{width:46px;height:46px;margin-right:9px; background-position:-52px -427px; display:block; float:left;}
+.topNote p{text-align:left; padding-left:85px; font-weight:700;}
+.redText,.jine{color:#d71249;}
+.jine{font-size:18px;}
+.dingdanzj,.psCopy{padding-left:30px;text-align:left; font-weight:bold;font-size:14px; line-height:26px;}
+.psCopy{border-top: 1px dotted #ddd;color: #00904c;margin-top:14px;padding-top:10px;}
+.ddzhifu,.zhuyisx{border:1px solid #ddd;padding:10px 10px 5px;color:#555; height:auto; margin-bottom:13px; overflow:hidden;}
+.banks{overflow:hidden;}
+.banks h4{font-weight:700;height:22px;line-height:22px;margin-bottom:7px;}
+.banks ul {height:100%;overflow:hidden;padding-left:20px;}
+.banks ul li {float:left;width:168px;height:52px;margin-right:40px;display:inline;}
+.banks ul li label {vertical-align: middle;}
+.banks ul li label input {float:left;margin:14px 4px 0 0;}
+.banks span {text-indent: -999px;float:left;width:140px;height:40px;border:1px #ECEBEB solid;}
+.banks .b1{background:url(../images/bank/gbank.gif) 0 0 no-repeat;}
+.banks .b2{background:url(../images/bank/jbank.gif) 0 0 no-repeat;}
+.banks .b3{background:url(../images/bank/zbank.gif) 0 0 no-repeat;}
+.banks .b4{background:url(../images/bank/nbank.gif) 0 0 no-repeat;}
+.banks .b5{background:url(../images/bank/dbank.gif) 0 0 no-repeat;}
+.banks .b6{background:url(../images/bank/xbank.gif) 0 0 no-repeat;}
+.banks .b7{background:url(../images/bank/ybank.gif) 0 0 no-repeat;}
+.banks .b8{background:url(../images/bank/pbank.gif) 0 0 no-repeat;}
+.banks .b9{background:url(../images/bank/abank.gif) 0 0 no-repeat;}
+.banks .b10{background:url(../images/bank/mbank.gif) 0 0 no-repeat;}
+.banks .b11{background:url(../images/bank/bbank.gif) 0 0 no-repeat;}
+.banks .b12{background:url(../images/bank/hbank.gif) 0 0 no-repeat;}
+.banks .b13{background:url(../images/bank/tbank.gif) 0 0 no-repeat;}
+.banks .b14{background:url(../images/bank/fbank.gif) 0 0 no-repeat;}
+.banks .b15{background:url(../images/bank/cbank.gif) 0 0 no-repeat;}
+.banks .b16{background:url(../images/bank/zfbank.gif) 0 0 no-repeat;}
+.banks .b17{background:url(../images/bank/cfbank.gif) 0 0 no-repeat;}
+.banks .b18{background:url(../images/bank/klbank.gif) 0 0 no-repeat;}
+.banks .b19{background:url(../images/bank/zfsaoma.gif) 0 0 no-repeat;}
+.turn{float:right;margin-bottom:13px;}
+.turn a{display:inline-block;line-height:30px;padding:0 20px;background:#FCFCFC;border:1px #C4C3C3 solid;margin-left:5px;}
+
+.zhuyisx{padding-bottom:15px;margin-bottom:0px;}
+.ddzhuyi{line-height:24px;color:#404040; padding:0 10px;}
+.ddzhuyi dt {height:28px;line-height:28px;font-size:14px;font-weight:900;}
+.ddzhuyi dd{padding-left:20px;}
+
+.bankDetails{padding:0px 0 5px 30px;margin-top:10px;width:480px;}
+.bankDetails .zhuangzhang dt{ font-weight:bold;color:#333; margin-bottom:5px;}
+.bankDetails .zhuangzhang dd{ line-height:25px; padding-left:25px;}
+.zhuyixia{ border-top:1px solid #ddd; width:815px; padding:10px 0; margin-top:10px; overflow:hidden; zoom:1;}
+.bankDetails .zhuyixia dl { color:#999;line-height:25px;}

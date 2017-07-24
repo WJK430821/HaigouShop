@@ -1,0 +1,65 @@
+/*主体内容开始*/
+
+.wrap_mycenter{margin-top:20px; font-family:'微软雅黑';color:#555;}
+.order{border:1px solid #d0d0d0;border-top-width:2px;padding-bottom:10px; margin-bottom:13px;}
+.order-top{border-bottom:1px solid #e1e1e1; padding:15px 20px;}
+.order-top h2,.order_detail h3{font-size:22px;font-weight:normal;margin-bottom:5px;}
+.order_info .order_nu{color:#666;margin-right:20px; vertical-align:middle;}
+.order-top .order_info1,.order-top .order_info2{padding:10px 0 0 35px;}
+.order-top .order_info strong{ font-size:14px; vertical-align:middle;}
+.order-top .order_info1 .statu{font-size:16px;font-weight:bold;}
+.order-top .order_info1 .txt_price{font-size:20px;vertical-align:middle;color:#ed6d00;}
+.order-top .order_info1 .txt_nor{color:#999; vertical-align:middle;}
+.order-top .order_info1 .btn_normal70{color:#fff;width:70px;height:26px; line-height:24px; margin-left:10px; display:inline-block; text-align:center; font-size:14px; background:url(../images/xxbuy.png) 0px 0px no-repeat;}
+.order-top .order_info1 a:hover{ background-position:-80px 0px;}
+.order-top .order_info2 .txt_nor{padding-left:5px;color:#666;vertical-align:middle;}
+.order .rev_show_detail,.order .show_detail{ padding-left:15px; color:#333;}
+.order .rev_show_detail:hover{color:#37f; text-decoration:underline;}
+.order .rev_show_detail b,.order .show_detail b{ display:inline-block;width:11px;height:13px;margin-left:3px; overflow:hidden; vertical-align:middle; background-position:-1px -509px;}
+.order .show_detail b{background-position:-17px -509px;}
+.order_info_detail{color:#666;padding-top:9px;padding-left:34px;}
+.order_info_detail p{ padding-bottom:8px;}
+
+.uc-tooltip{ position:relative;}
+.bd h3{ font-size:14px;padding:10px 0 0 21px;}
+.order-delivery-status{color:#aab2bd; display:block;}
+.order-delivery-status .step{ float:left;width:151px;padding:0px 0px 5px;text-align:center;} 
+.order-delivery-status .step-line{height:60px; width:151px; background-image:url(../images/icon-delivery.png); background-repeat:no-repeat; background-position:-155px 39px; position:relative;}
+.order-delivery-status .step-now .step-line{ background-position:-77px 39px;}
+.order-delivery-status .step-now.step-first .step-line{ background-position:77px -3px;}
+/*流程走完*/
+.order-delivery-status .step-done .step-line{ background-position:0px -45px;}
+/*流程走完*/
+.order-delivery-status .step-dot{ position:absolute;top:0px;left:38px;width:80px;height:60px;background-image:url(../images/icon-delivery.png); background-repeat:no-repeat;
+background-position:-310px 0px;}
+.order-delivery-status .step-now .step-dot,.order-delivery-status .step-done .step-dot{ background-position:-310px -80px; cursor:pointer;}
+.order-delivery-status .uc-tooltip-popup{ position:absolute;left:45%; bottom:45px;width:300px;padding:10px;margin-left:-155px;color:#fff;background:#656d78;
+-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;text-align:left; line-height:1.5;}
+.uc-tooltip .uc-tooltip-popup .arrow { position:absolute;left:50%;bottom:-7px;_bottom:-15px; width:14px;height:7px;margin-left:-7px; background:url(../images/icon-delivery.png) 0px -126px no-repeat;}
+.order-delivery-status .step-now .step-dot:hover,.order-delivery-status .step-done .step-dot:hover{ background-position:-310px -160px;}
+/*评价*/
+.order-delivery-status .step-last .step-line{ background-position:-233px 39px;}
+.order-delivery-status .step-first .step-line{ background-position:77px 39px;}
+
+.order-delivery-status span.btn-comment{ cursor:default;width:68px; position:absolute;top:30px;left:44px;}
+.btn-round{height:24px;line-height:24px;-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px; background:#ccd0d8;border:0;color:#fff; display:inline-block;}
+.order-delivery-status .btn-comment{width:68px; position:absolute;top:30px;left:44px;}
+
+.btn{display:inline-block;margin-bottom:0;text-align:center;cursor:pointer;background:#fff;border:1px solid #e6e9ed;
+-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#656d78;padding:0;width:68px;}
+
+/*商品详情*/
+.order_detail{padding:15px 20px 5px;}
+.order_detail h3{margin-bottom:15px;}
+.table_order_detail{width:100%;}
+.table_order_detail th{padding-left:10px; text-align:left;height:40px;background:#f3f3f3; color:#999;}
+.table_order_detail td{height:23px;padding:10px 0 10px 10px;border-bottom:1px solid #e1e1e1;}
+.table_order_detail .c{ text-align:center;}
+
+/*商品总计*/
+.total{padding:6px 31px 0 0;color:#666;}
+.total ul li{ text-align:right;}
+.total ul li.l,.total ul li.r{ display:inline-block; zoom:1;}
+.total ul li.l{ text-align:right;}
+.total ul li.all{padding-top:5px;font-size:16px;color:#333;}
+.txt_price{ color:#ed6d00;}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+/*主体内容*/
+.logincon{ border:1px solid #ddd; padding:15px 40px 10px; margin-bottom:13px; width:918px; height:435px;font-family:"Microsoft Yahei";}
+.loginleft{ width:470px; overflow:hidden;}
+.login_title{ height:45px; background-position:-89px -217px; position:relative;}
+.login_title h2,.zhuce_title h2{ position:absolute;top:-2px;left:40px;font-size:18px;color:#00479d;}
+.login_title p,.zhuce_title p{ position:absolute;top:25px;left:40px;font-size:12px;color:#909090;}
+
+.denglu{ padding-right:40px; padding-top:60px;}
+.biaodanI{ margin-bottom:5px;}
+.denglu label{ display:block; color:#999; line-height:25px;}
+.denglu .inputI{position:relative;}
+.denglu .dengluI{width:229px;height:25px;border:1px solid #ccc; line-height:25px; color:#666;}
+.denglu .inputI b{position:absolute;top:5px;right:8px;_right:58px;width:16px; height:16px; background:url(../images/loginI.jpg) no-repeat;} 
+.denglu .inputI b.pwd{ background-position:-17px 0px;}
+.zidong{ margin:10px 0;*margin:5px 0;float:left;}
+.zidong .zd_login{ color:#999; padding:0px 5px;*padding-left:3px;}
+.zidong .wpwd a{ color:#666;}
+.zidong .wpwd a:hover{ color:#f60; text-decoration:underline;}
+.login_btn input{ width:213px; height:27px; cursor:pointer; border:none; background-position:0px -694px;}
+.login_hzuser p{ color:#999;margin:13px 0 10px;}
+.login_hzuser .hezuo_a a{ display:block; float:left; margin-right:10px;height:20px; color:#666; position:relative; padding-left:20px;}
+.login_hzuser .hezuo_a a em{background:url(../images/is.png) no-repeat; position:absolute; display:block; width:20px;height:20px;}
+.login_hzuser .hezuo_a .zhifubao em{ background-position:0px -53px; top:0px;left:-6px;}
+.login_hzuser .hezuo_a .sina_weibo em{ background-position:0px -119px; top:0px;left:-6px;}
+.login_hzuser .hezuo_a .qq_login em{ background-position:0px -2233px; top:0px;left:-6px;}
+.zhuce{ clear:both; padding-top:13px;_padding-top:2px;}
+.zhuce a{width:90px;height:27px; background-position:0px -734px; display:block; text-indent:-99999px;}

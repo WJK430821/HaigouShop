@@ -1,0 +1,78 @@
+s@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+/*头部logo*/
+.cartjindu ul{ width:752px;height:30px;padding:15px 0 0px;}
+.cartjindu ul li{background:#a7b0b5;color:#fff;text-align:center; font:normal 15px/30px '微软雅黑'; float:left; }
+.cartjindu .step1{background:#26539c url(../images/cart.png) center right no-repeat; width:260px;}
+.cartjindu .step2{background:#a7b0b5 url(../images/cart1.png) center right no-repeat; width:252px;}
+.cartjindu .step3{width:237px;}
+/*主体部分*/
+.pageTitle{height:25px;margin:20px 0px 12px;}
+.pageTitle span,.pageTitle h1{float:left;margin-left:8px; display:inline-block;}
+.pageTitle .iconCar2{ width:26px;height:25px; background-position:-86px -300px;}
+.pageTitle h1{color:#555; font:normal 22px/22px '微软雅黑';}
+.cartTable{width:100%; font-family:'微软雅黑';color:#555;overflow:hidden;}
+.cartTable thead th{border-bottom:2px solid #a0a1a2;font-weight:bold;line-height:38px; text-align:left; }
+.cartTable thead th strong{ margin-left:10px;}
+.thWidth350{ width:210px;}
+.thWidth350 span a{ font-weight:normal; color:#00479d; margin-left:10px;}
+.thWidth350 span a:hover,.kshoppinggoods p a:hover{color:#f60;}
+.thWidth122{ width:122px;}
+/*修改购物车成功*/
+.login_notification{padding:10px 10px;border:1px solid #ddd;width:978px;margin:20px auto 0;}
+.success{ padding-left:24px;color:#666; display:inline-block; background-position:-79px -376px;}
+/*修改购物车结束*/
+.cartTable tbody td{border-bottom:1px solid #ddd; padding:20px 0;}
+.cartTable .goodsImg{padding-left:10px;width:50px; text-align:center; overflow:hidden;}
+.cartTable .goodsInfo{font-weight:bold;padding-left:10px;}
+.cartTable .redText{color:#ed6d00;}
+.priceCheck{ background:#f4f5f7;height:48px; position:relative;}
+.priceCheck .proDetailSprite{ position:absolute;left:12px;top:12px; background-position:-121px -302px; width:18px;height:21px;}
+.priceCheck .clearCopy{position:absolute;left:37px;top:13px; width:100px;}
+.priceCheck1{height:65px;padding-bottom:10px;background:#f4f5f7; letter-spacing:1px;}
+.total{width:180px; margin-left:15px;}
+.total p,.total1 p{clear:both; line-height:22px;}
+.total p span{ margin-right:10px;}
+.amout{ line-height:22px;}
+.amout span{color:#e4393c;}
+.total1{width:250px;margin-left:10px;line-height:30px;font-weight:700;}
+.total1 .finalPrice{font-size:20px;color:#e4393c; font-weight:bold; float:right;}
+.cart-button{margin-top:13px;overflow:hidden;height:41px;}
+.cart-button a{ display:block; text-indent:-9999px;}
+.cart-button a.jxgouwu{background-position:0px -775px;width:127px;height:41px;}
+.cart-button a.qubuy{background-position:0px -883px;width:128px;height:41px;}
+
+/*购买同样的产品还购买了*/
+.tysp{border:1px solid #ddd; overflow:hidden;margin:13px 0 0px; font-family:"微软雅黑";}
+.tysp h2{width:985px;height:30px;font:bold 14px/30px '微软雅黑';color:#666;padding-left:13px;background:#f4f5f7;}
+.rollBox{width:958px;overflow:hidden; padding-left:17px;}
+.rollBox .LeftBotton{height:23px;width:14px;overflow:hidden;float:left;display:inline;margin:70px 10px 10px 10px;cursor:pointer; background-position:0px -433px;}
+.rollBox .RightBotton{height:23px;width:14px;overflow:hidden;float:left;display:inline;margin:70px 10px 10px 25px;cursor:pointer;background-position:-28px -433px;}
+.rollBox .Cont{width:875px;overflow:hidden;float:left;}
+.rollBox .ScrCont{width:10000000px;}
+.rollBox .Cont .pic{width:144px;float:left;text-align:center; padding-left:30px;}
+.rollBox .Cont .pic .tj-img{margin:5px 0;}
+.rollBox .Cont .pic .tj-title a:hover{ color:#f60; text-decoration:underline;}
+.rollBox .Cont .pic .tj-price{margin:5px 0 10px; color:#555;}
+.rollBox .Cont .pic .tj-price strong{color:#e5566f;}
+.rollBox #List1,.rollBox #List2{float:left;}
+
+/*购物车为空的*/
+.kshoppinggoods{width:648px;height:295px;border:1px #E4E4E5 solid;padding:0 0 0 330px;margin:0px auto 0px;background: url(../images/hcar.gif) 190px 75px no-repeat #FEFDF4;}
+.kshoppinggoods h3{font-size:22px;font-family:"Microsoft YaHei",SimSun;font-weight:500;color:#404040;margin-top:120px;}
+.kshoppinggoods p {padding-left:16px;background:url(../images/shopp.gif) 0 4px no-repeat;margin-top:10px;}
+.kshoppinggoods p a{color:#376AAB; font-size:14px;font-family:"微软雅黑";}

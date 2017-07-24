@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+
+/*主体left*/
+.buy-buy,.dd_guanli{ width:210px; height:auto;font-family:"Microsoft Yahei";}
+.mt,.mt1,.mt2{border:1px solid #ddd; height:28px; line-height:26px; font-size:14px; background:#f7f7f7; color:#666;}
+.mt1{background:#004da5; color:#FFF;}
+.mt h2,.mt1 h2,.mt2 h2{ font-weight:400; text-indent:0.5em;}
+.mt2{ background:#0158b1;}
+.mt2 h2{color:#fff; font-weight:900; margin-left:5px;}
+.mc,.mc1,.mc2,.mc4{ border:1px solid #ddd; border-top:0;overflow:hidden;}
+.mc ul,.mc1 ul{padding:0 8px;}
+.mc ul li{border-top:1px dotted #dedede;width:190px;overflow:hidden;}
+.mc1 ul li{ height:auto;border-top:1px dotted #dedede;}
+.mc2{padding-bottom:10px; padding-left:5px;}
+.mc2 ul li{ border-top:none;}
+
+.fore{border-top:0; padding:12px 5px;position:relative; }
+.fore a{display:block; width:50px; height:50px; overflow:hidden;}
+.fore a b{position:absolute; width:24px; height:24px; line-height:23px;display:block; text-align:center; color:#f60;top:7px;left:0px; background-position:-56px -143px;}
+.infor{ display:inline; margin-left:10px; width:120px;}
+.infor .title{ padding-top:10px;}
+.infor .title a:hover,.p-title a:hover{ text-decoration:underline;color:#f60;}
+.infor .price{ font-weight:bold; color:#ed6d00;}
+.infor .price i{font-family: Arial; font-style:normal;}
+
+.content{overflow:hidden; padding:0 0 2px 0;margin-bottom:10px;font-family:"Microsoft Yahei";}
+.articlelist{padding:10px 20px;}
+.articlelist li{border-bottom: 1px dotted #E6E7E8;line-height:30px;padding:0 10px;list-style:disc inside;position: relative;}
+.articlelist li span.time{position:absolute;top:0px;*top:-5px;right:0px;_right:20px;color:#bbb;}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+/*主体内容*/
+.zhucecon{ border:1px solid #ddd; padding:15px 40px 10px; margin-bottom:13px; width:918px; height:435px;font-family:"Microsoft Yahei";}
+.zhuceleft{ width:470px; overflow:hidden;}
+.zhuce_title{ height:45px; background-position:-77px -254px; position:relative;}
+.zhuce_title h2{ color:#ed6d00;}
+
+.zhuce-yz{padding:30px 0 0 15px;}
+.zhuceI{color:#999; }
+.zhuceI label{ float:left; display:block; line-height:25px;}
+.zhuceI input{ width:222px; height:25px; border:1px solid #ccc; line-height:25px; float:left;color:#999;}
+.zhuceI span{display:block;padding-left:60px; clear:both;height:30px; line-height:30px;}
+.zhuceI .formred{ color:#f00;}
+.zhuceI .display{ color:#74C228;}
+.user_yzm input{ width:78px;}
+.user_yzm img{ margin:3px 5px 0px; margin-top:3px;}
+.user_yzm a{color:#3946d3; font-weight:bold;}
+.zhucexieyi{ padding:5px 0px 0 30px;*padding-top:0px;}
+.zhucexieyi i{ margin-left:10px;font-style:normal;}
+.zhucexieyi i a{color:#3946d3; }
+.user_yzm a:hover,.zhucexieyi i a:hover{ color:#f60;}
+.zhuce-btn{padding:10px 0 0 147px;}
+.zhuce-btn input,.lijidenglu a{ width:77px;height:27px; border:1px solid #3946d3; background:#3946d3;-webkit-border-radius:3px;border-radius:3px; line-height:24px; text-align:center; color:#fff;
+ font-weight:bold;font-family:"Microsoft Yahei";}
+ 
+.zhuceright{ padding-top:75px;}
+.lijidenglu p{ font-size:14px; color:#333; line-height:23px;}
+.lijidenglu a{ width:91px;height:27px; line-height:27px; display:block; font-size:14px; margin-top:5px;}

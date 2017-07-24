@@ -1,0 +1,68 @@
+<nav id="topNav">
+	<div id="topNavWrap" class="clearfix">
+		<div id="topNavLeft">
+		<?php
+		if($_SESSION["homeuser"]==""){
+		echo "考啦欢迎你"."<a class=\"login\" href=\"".URL."/logins/login\">登录</a>";
+		echo "<span class=\"sep\">|</span>";
+		echo "<a target=\"_blank\" href=\"".URL."/register/reg\">免费注册</a>";
+		}else{
+		echo "考啦欢迎你：{$_SESSION['homeuser']['name']}！";
+		echo "<a class=\"login\" href=\"".URL."/logins/logout\">退出</a>";
+		}
+		?>
+		
+		</div>
+		<ul id="topNavRight">
+			<li><a class="toplevel" href="<?php echo URL."/buycat/myorder";?>" user="true" rel="nofollow" data-param="zn=top">个人中心</a>
+		</ul>
+	</div>
+</nav>
+<h1 class="hide">考啦嗨购嗨淘</h1>
+<nav id="topTabPlaceHolder" class="f-dn"></nav>
+<header id="docHead" class="j-indexTopFixed">
+	<div id="docHeadWrap">
+		<a href="<?php echo URL; ?>" class="logokaola" title="考啦嗨购嗨淘" data-param="zn=top"></a>
+		<div class="logo f-dn"><a class="logokaolalt" href="<?php echo URL; ?>" data-param="zn=top"></a></div>
+		<div class="m-searchiptbox m-searchiptbox-1">
+			<div id="topsearchbox">
+				<div id="topsearch">
+					<div class="wrap">
+						<input id="topSearchInput" source="0" placeholder="壁挂式洗衣机" urllink="" actualkey="童装" type="text">
+					</div><span id="topSearchBtn" class="w-icon w-icon-27"></span>
+					<span class="w-icon w-icon-26"></span>
+				</div>
+				<div class="m-searchhint">
+					<ul id="searchhintlist" style="display: none;"></ul>
+				</div>
+			</div>
+			<ul id="suggestlist" class="m-suggestlist clearfix">
+				<li>
+				<a target="_blank" class="suggestitem" href="" datakey="奶粉">奶粉</a>
+				</li>
+				<li>
+				<span class="sep">|</span><a target="_blank" class="suggestitem" href="h" datakey="马油">马油</a>
+				</li>
+			</ul>
+		</div>
+		<a target="_blank" href="<?php echo URL."/buycat/show";?>"  class="m-shopcartnew m-shopcartnew-1">
+		<i class="iconfont"></i><span class="wrap">购物车<b class="num" id="newcartnum" style="display: none;">0</b></span>
+		</a>
+	</div>
+</header>
+<nav id="topTabBox">
+	<div id="topTab" class="clearfix">
+		<ul id="funcTab" class="clearfix">
+			<li class="navitm " data-effect="1">
+			<a class="toplevel" href="<?php echo URL; ?>" target="_blank">首页</a>
+			</li>
+			<?php 
+				foreach($this->tplist as $type){
+					echo "<li class=\"navitm\" data-effect=\"1\">";
+					echo "<a class=\"toplevel\" href=\"".URL."/index/list?tid={$type['id']}\"  target=\"_blank\">{$type['name']}</a>";
+					echo "</li>";
+				}
+			?>
+		</ul>
+	</div>
+</nav>

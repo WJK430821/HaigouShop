@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*footer*/
+.footer{font-family:"Microsoft Yahei";}
+.all-helpbox,.footer-nav,.footer-fuwu{background:url(../images/index-a.png) repeat-x;}
+.all-helpbox,.footer-nav{ overflow:hidden; zoom:1;  background-color:#eee; background-position:0px -201px;}
+.all-helpbox .wrapper{ background:url(../images/logo1.png) 0px 27px no-repeat;}
+.wrapper{padding-top:20px; margin:0 auto; text-align:left;width:1000px;height:190px; *height:195px;}
+.dl-all-help{ width:120px; float:left; margin-left:80px; display:inline; line-height:1.8em; padding-bottom:10px; color:#555;}
+.dl-all-help-title{ font-size:1.3em; font-weight:bold; padding:10px 0;}
+
+.footer-fuwu{background-color:#aeaeae; background-position:0px -633px;}
+.footer-fuwu .wrapper{background:url(../images/logo1.png) 27px -160px no-repeat; height:110px;}
+.footer-fuwu .dl-all-help{ color:#fff; margin-left:100px; width:145px;}
+.footer-fuwu .dl-all-help-title{font-size:1.7em; padding-top:24px; padding-bottom:4px;}
+.footer-fuwu dd a{color:#FFF;}
+
+.footer-nav .wrapper{ background-image:none;text-align:center; height:55px;}
+.p-nav{ line-height:1.9em; font-weight:bold; color:#555; text-align:center; padding:15px 0;}
+.p-nav a{ color:#555; margin:0 5px;}
+.p-nav a:hover{ color:#f60; text-decoration:underline;}
+.banquan{ color:#666;}
+.p-img{ padding:15px 0;}

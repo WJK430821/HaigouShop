@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input,select,textarea {font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+
+/*主体内容*/
+
+.article_content{height:auto; border:1px solid #ddd; padding:20px 30px 0px 30px;font-family:"Microsoft Yahei"; font-size:14px; color:#555;}
+.article_content h3{ font-size:18px; color:#555; text-align:center; padding:10px 0; font-weight:700;}
+.article_content .title{height:26px;border-bottom: 1px dotted #E6E7E8;padding:20px 20px 5px; margin:0 20px;}
+.articleinfo{ line-height:24px; float:left;}
+.articleinfo .shore{height:26px; line-height:26px; padding:0 0 0 12px; width:160px; overflow:hidden;}
+.article_content .text{padding:20px; line-height:25px; margin-bottom:5px;}
+.article_content .text p{ text-indent:2em; padding:5px 0;}
+.article_content .text div{ margin-top:10px;}
+.article_content .text .articlefoot{border-top:1px dotted #e6e7e8;margin:20px 10px; line-height:24px; padding-top:10px;}

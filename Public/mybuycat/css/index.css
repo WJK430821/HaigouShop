@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;vertical-align:middle;}
+.clear{display:block;overflow:hidden;clear:both;height:0;line-height:0;font-size:0;}
+
+.w{margin:0 auto; width:1000px;}
+
+.clearfix:after {content:".";display:block; height:0; clear:both;visibility:hidden;} 
+.clearfix{*height:1%;}
+
+/*--轮播开始*/
+.lunbo{ width:100%;height:380px; overflow:hidden; position:relative; z-index:2;}
+.showImg{ width:1920px; height:380px;position:absolute;}
+.showImg li{float:left;width:1920px;height:380px;}
+.xiaohd{position:absolute;overflow:hidden;z-index:4;top:162px;left:50%;margin-left:300px;}
+.xiaohd .navhd li{width:190px;height:40px;margin-top:5px;cursor:pointer;border:solid 3px #7B7979;opacity:0.3;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);}
+.xiaohd .navhd li.selected{width:190px;height:40px;margin-right:5px;cursor:pointer;border: solid 3px #FFA133;opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+
+/*主体内容开始*/
+.main{overflow:hidden;margin:13px auto;}
+.main1{overflow:hidden;margin:0px auto 13px;}
+.mainleft{}
+.kuaixun{width:208px; height:378px;border:1px solid #ddd;}
+.kufubz{width:208px;height:53px; background-position:-6px -82px;}
+.kufubz a{ display:inline-block; text-indent:-950px; overflow:hidden; width:69px; height:53px; float:left;}
+.kufubz a:hover{ background-position:-6px -148px;}
+.kufubz .item-2:hover{ background-position:-75px -148px;}
+.kufubz .item-3:hover{ background-position:-144px -148px;}
+.qitiannews{padding:5px 7px 8px 10px; background:#f3f3f3;}
+.qitiannews h2{height:26px;color:#404040;font-family:"Microsoft Yahei";font-weight:700;font-size:14px;line-height:26px;}
+.qitiannews .more{color:#5E5E5E;line-height:26px;}
+.qitiannews .more:hover,.newlist li a:hover{color:#f60;}
+.newlist{ clear:both;color:#7E7E7E;}
+.newlist li{height:21px;line-height:21px;overflow:hidden;}
+.newlist li span{float:left;coloe:#7E7E7E;line-height:21px;}
+.newlist li s{float:left;overflow:hidden;width:0;height:0;margin:6px 3px 0;border:3px solid #F3F3F3;border-left-color: #D9D9D9;}
+.newlist li a.highlight{color:#EA5504;}
+.newlist li a{color:#949494;}
+.cpgg{overflow:hidden; padding:4px;}
+.hdleft{ width:210px; height:320px; overflow:hidden;position:relative; z-index:10; margin-top:13px;}
+.xiaoImg{ width:210opx; height:320px; overflow:hidden;}
+.xiaoI li{float:left;width:210px;height:320px;overflow:hidden;}
+.chufahd{position:absolute;overflow:hidden;z-index:12;right:10px; bottom:10px;}
+ .chufahd span{display:inline-block;width:16px;height:13px;line-height:13px; overflow:hidden;margin:0 2px;
+ _background:url(../images/xiao.gif) no-repeat 0px 0px;cursor:pointer; background-position:0px -88px;}
+.chufahd .cur{ background-position:-21px -88px;_background:url(../images/xiao2.gif) no-repeat 0px 0px;}
+ 
+ /*主体右侧开始*/
+.mainright{ height:auto; width:780px;}
+.mainright1{ width:778px; border:1px solid #ddd; height:auto;}
+.mainright2{ width:210px;height:auto;}
+ /*tab标签*/
+.tabcontent{ overflow:hidden;*margin-bottom:20px;}
+.navbq{ width:778px;height:50px; background:url(../images/tab.jpg) no-repeat;}
+.navbq ul{ text-align:center;}
+.navbq ul li{float:left; margin-left:-1px;}
+.navbq ul li a{ font-size:20px; color:#333; display:inline-block; width:190px; height:50px; line-height:50px; font-family:"Microsoft Yahei"; cursor:pointer;}
+.navbq li a.tabactive {color:#ff8604; background:#fff;width:188px;margin:-1px 0 0 0px; height:50px; border:1px solid #ccc; border-bottom:none;cursor:pointer;}
+#tabcontent1,#tabcontent2,#tabcontent3{padding:22px 0px 0 22px;float:left;width:756px; margin-bottom:20px;}
+/*今日推荐部分*/
+.jinritj,.rexiaocp,.wulindahui{font-family:"Microsoft Yahei"; color:#555;}
+.listdh{height:40px;line-height:25px;}
+.tjcontent{overflow:hidden; margin-bottom:50px;}
+.feed{ position:relative;}
+.feed-hd{ width:476px;}
+.feed-title{ font-size:22px;font-weight:normal;}
+.feed-title a:hover,.item-title a:hover,.item-title2 a:hover{text-decoration:underline; color:#f60;}
+.feed-title a .feed-title-em{font-weight:normal;color:#ff8604;}
+.feed-title a .feed-title-span{display:block; width:456px;}
+.feed-img{ margin-right:22px; display:inline; position:relative;}
+.feed-price-wrap{ position:absolute; text-align:center; width:95px; height:23px;z-index:12;right:0px;bottom:0px; background-position:-4px -115px;}
+.feed-price-wrap span{ color:#FFF; line-height:23px;}
+.feed-bd{ width:470px; overflow:hidden; line-height:22px; text-indent:2em; padding-top:15px; float:left;*float:none;}
+.feed-info{ clear:both; padding-top:12px; color:#999; height:18px;}
+.feed-pub-time{ display:inline;}
+.feed-act{ width:182px;}
+.zan,.yiban,.fenxiang{ cursor:pointer;color:#999; margin-right:10px;letter-spacing:2px;}
+.zan b,.yiban b{ font-weight:normal;}
+/*分页*/
+.page,.page1{text-align:center;margin-bottom:10px;padding-top:15px; }
+.page1{text-align:right; clear:both;}
+.page a,.page1 a{margin:0 5px 0 0;padding:0px 6px; border:1px solid #D1D1D1; display:inline-block;}
+.page .current,.page1 .current{margin:0 5px 0 0;padding:0px 6px;border:1px solid #A4A4A4;background:#EBEBEB;}
+
+/*热销产品*/
+.listnav{overflow:hidden; height:30px;}
+.listul .listtitle{border-bottom: 2px solid #f60; margin-right:10px; float:left;padding-bottom:1px; cursor:pointer;}
+.listul li{ float:left;margin-right:10px; display:inline;}
+.shaixuan form select{ color:#555;font-family:"Microsoft Yahei";display:inline; width:90px; height:22px; border:1px solid #ccc; margin-left:20px;}
+.rexiaoul{ float:left; margin-left:-24px; display:inline;}
+.rexiaoul li{ float:left; width:220px; height:auto; padding:20px 20px 20px;}
+.item-pic{margin-bottom:8px;}
+.item-title{ width:218px; height:36px; line-height:18px; overflow:hidden; margin-bottom:5px;}
+.item-title a{color:#999; font-weight:normal;}
+.item-zoushi{width:83px; height:18px; position:relative; background-position:52px -144px;}
+.item-zoushi span{ color:#666; cursor:pointer;}
+.zoushitu{ width:450px; background:#FFF; height:250px; border:1px solid #ddd; position:absolute; top:28px;left:0px;-webkit-border-radius:3px;border-radius:3px;z-index:20;padding:15px;}
+.zscontent{ width:420px; height:220;}
+.xiaosanjiao{ margin-top:-44px;*margin-top:-62px;position:absolute;
+border-left:10px dashed transparent;border-right:10px dashed transparent;border-bottom:10px solid #ddd; z-index:21;}
+.item-price,.rxprice{ color:#666; margin-bottom:5px;}
+.item-price .rxprice strong{ color:#ed6d00; font-size:16px;}
+.item-price .cjl b,.item-jjtz .pingjia{ color:#005aa0;}
+.item-jjtz .tongzhi{color:#ed6d00;}
+.item-price span{ display:block;}
+
+/*武林大惠部分*/
+.dahuiul{ float:left; margin-bottom:10px;*margin-bottom:7px;}
+.dahuiul li{float:left; width:231px; height:auto; border:1px solid #ddd; list-style:none; padding-bottom:15px; margin:10px 17px 0 0px; display:inline;}
+.dahuiul li .item-pic{ margin-bottom:0px;height:210px;*height:auto;}
+.item-qianggou img{float:left;}
+.item-time { height:auto; padding-top:10px;*padding-top:5px;clear:both;}
+.item-time .shizhong{width:21px; height:21px;margin:3px 10px 0 65px; background-position:-31px -144px;}
+.daojishi{ font-size:18px; color:#666;}
+.item-jiage{color:#00479d; font-size:20px; font-weight:bold;padding-left:26px;}
+.item-jiage em{ font-weight:normal; font-size:12px;}
+.item-scj{color:#999;padding-left:26px;}
+.item-scj em{text-decoration:line-through;}
+.item-title2{ padding-left:26px; padding-top:2px; overflow:hidden;}
+.item-title2 a{ color:#666;}
+.item-num{color:#999;padding-left:26px; padding-top:2px;}
+.item-num span em{ color:#339cbf;}
+.item-num span.kc{ margin-left:20px;}
+.item-buy{width:211px; height:32px; border:1px solid #0068b7;background:#0068b7;-webkit-border-radius:3px;border-radius:3px; text-align:center; line-height:32px; margin:5px 0 0 9px;}
+.item-buy a{ font-size:20px; color:#fff;width:211px; height:32px; display:block;}

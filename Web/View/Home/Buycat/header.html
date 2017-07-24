@@ -1,0 +1,48 @@
+<!--头部 action-->
+    <div class="header">
+       <!--toubu  小导航--> 
+    	<div class="xdh">
+        	<div class="w"> 
+                <ul class="fl ld">
+                <?php
+                  if($_SESSION["homeuser"]==""){
+                   echo "<li class=\"menuSp\">";
+        						echo "考啦欢迎你！";
+        						echo "<span>";
+        							  echo "<a href=\"".URL."/logins/login\">登录</a>";
+        							  echo "<a href=\"".URL."/register/reg\">免费注册</a>";	
+        						echo "</span>";
+				          echo "</li>";
+                  }else{
+                    echo "<li class=\"menuSp\">";
+                      echo "考啦欢迎你{$_SESSION['homeuser']['username']}！";
+                      echo "<a class=\"login\" href=\"".URL."/logins/logout\">退出</a>";
+                    echo "</li>";
+                  }
+                ?>
+                </ul>
+                <ul class="fr lh">
+                   <li class="ld"><a href="<?php echo URL."/buycat/myorder";?>" target="_blank">个人中心</a></li>
+        
+                </ul>
+            </div> 
+        </div>  
+         <!--toubu  小导航--> 
+        <!--logo 搜索部分-->
+        <div class="logosearch w">
+             <div class="logo fl">
+                 <a href="<?php echo URL;?>">
+                     <img src="<?php echo _PUBLIC_."mybuycat/";?>images/logo.png" />
+                 </a>
+             </div>
+             <div class="cartjindu cartjindu2 fr">
+             	  <ul>
+                       <li class="step1">我的购物车</li>
+                       <li class="step2">填写核对订单信息</li>
+                       <li class="step3">成功提交订单</li>
+                  </ul>	
+             </div> 
+        </div>
+        <!--logo 搜索 over-->
+    </div>  
+    <!--头部 over-->

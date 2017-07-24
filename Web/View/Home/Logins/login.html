@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="<?php echo _PUBLIC_."/"?>css/core.css">
+<link rel="stylesheet" href="<?php echo _PUBLIC_."/"?>css/index.css">
+	<meta charset="UTF-8">
+	<title>考啦嗨购-登录页</title>
+<style type="text/css">
+.login-cont{margin:15px auto;width: 960px;height: 303px;}
+.login-cont .cont-wrap {width: 960px;margin: 0 auto;position: relative;}
+.login-cont .login-link-wrap {
+    width: 495px;
+    height: 303px;
+    position: absolute;
+    display: block;
+    float:left;
+}
+.login-dialog {width:460px;height: 250px;background: #f5f5f5; border: 1px solid #e1e1e1;padding: 25px 0px;float: right;}
+.login-dialog .title {width:400px;padding: 0 0 20px 25px;margin: 0 0 20px; border-bottom: 1px dotted #e1e1e1;}
+.login-dialog .title .t-name {float: left;font-size: 14px;}
+.login-dialog .title .register-guide {float: right;display: block;color: #666;
+}
+.quick-login {text-align: left;color: #666; position: relative;height: 68px;}
+.dialog-main {padding: 10px 50px 0;}
+.dialog-main li {padding: 0 0 30px;}
+.clearfix {zoom: 1;overflow: hidden;}
+.dialog-main span {display: block;float: left;width: 70px;text-align: right;
+    color: #666;font-size: 14px;padding: 2px 0 0;}
+.placeholder {float: left;position: relative;height: 28px;width: 172px;}
+.input-dialog {display: block;width: 165px;height: 20px;padding: 5px 0 5px 5px;border: 1px solid #e1e1e1; outline: 0;float: left;}
+.forget-pw {display: block;float: left;padding: 4px 0 0 5px; color: #f00;}
+.red-btn {float: left;width: 96px; height: 30px;color: #fff;padding: 0 30px 0 18px; _padding: 2px 30px 0 18px; border: 0;text-align: left;vertical-align: middle;cursor: pointer;
+    background: url(http://mbbimg.mbaobao.com/static/pcweb//mod/page/login/3.0.0/img/login_single_page.png) no-repeat 73px -166px;background-color: #f00;}
+</style>
+</head>
+<body>
+<?php include("./Web/View/Home/Index/header.html");?>
+<!-- LOGIN START -->
+<div class="login-cont">
+	<div class="cont-wrap">
+		<div class="login-link-wrap">
+        	<a href="<?php echo URL;?>" class="login-link">
+            <img src="<?php echo _PUBLIC_."/"?>images/ads.jpg" alt=""></a>
+        </div>
+		<div class="login-dialog">
+            <div class="title clearfix">
+                <h1 class="t-name">用户登录</h1>
+                <span class="register-guide">现在还不是考啦会员? <a href="<?php echo URL."/register/reg"; ?>" target="_blank">立即注册</a></span>
+            </div>
+                <form action="<?php echo URL."/logins/doLogin"; ?>" method="post" name="form_login" id="form_login">
+                    <input type="hidden" id="referer_url" value="/" />
+                    <ul class="dialog-main">
+                        <li class="clearfix">
+                            <span>用户名：</span>
+                            <div class="placeholder">
+                                <input class="input-dialog" type="text" name="username"
+                                     id="js_login_mobile" tabindex="1" />
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <span>登录密码：</span>
+                            <input class="input-dialog" type="password" name="pass" maxlength="20"
+                                id="js_login_pw" value="" tabindex="2" />
+                        </li>
+                        <li class="clearfix">
+                            <span></span>
+                            <input type="submit" id="login-submit" class="red-btn" value="马上登录" tabindex="4" />
+                        </li>
+                    </ul>
+                </form>
+   
+            </div>
+
+	</div>
+</div>
+<!-- LOGIN END -->
+<?php include("./Web/View/Home/Index/footer.html");?>
+</body>
+</html>

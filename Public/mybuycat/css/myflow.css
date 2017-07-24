@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,legend,input,button,textarea,select,p,th,td{margin:0;padding:0;}
+body{font:12px/1.5 Arial, Helvetica, "宋体", sans-serif;background:#FFF;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style-type:none;outside:none;}
+a{text-decoration:none;color:#666;outline:0;}
+a:hover{text-decoration:none;color:#f60;outline:0;}
+var,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,textarea{resize:none;outline:none;}
+fieldset,img{border:0;}
+.clear{clear:both;width:0;height:0;line-height:0;}
+
+/*主体部分*/
+.myIndent h1{width:200px;height:30px;line-height:30px;color:#fff; font-size:14px; background:#151515;padding-left:10px;}
+
+.dd_guanli,.dd_list{font-family: "微软雅黑";}
+.subTit{height:30px;line-height:30px;background:url(../images/ddzx.jpg) repeat-x;font-size:14px;color:#303030;display:block;padding-left:12px;overflow:hidden;}
+.listItem{padding:0px 0px 5px;overflow:hidden;}
+.listItem li{padding:1px;}
+.listItem li a{background:url(../images/dd_last.png) 14px center no-repeat; display:block;line-height:29px;padding-left:26px;}
+.listItem li.current a{background:#e1e1e1 url(../images/dd_hover.png) 14px center no-repeat; display:block;line-height:29px;padding-left:26px;color:#303030;font-weight:bold;}
+.listItem li a:hover{background:#e1e1e1 url(../images/dd_hover.png) 14px center no-repeat;color:#303030;font-weight:bold;}
+
+.dd_list h6,.thuan h6{font-family: "微软雅黑";color:#333;line-height:30px;background:#f9f9f9;font-weight:bold;font-size:16px;padding:5px 12px;border-bottom:1px solid #dddddd;overflow:hidden;}
+.container{border:1px solid #d1d1d1;overflow:hidden; float:left;}
+.container dt {border-bottom:2px solid #e6e7e8;color:#333;font-weight:bold;padding:5px 0;background:#fdfdfd; overflow:hidden;height:20px;}
+.container dt li,.container dd li{float:left;padding:0 0 0 25px;display:inline-block;border-right: 1px solid #e2e4e4; overflow:hidden;}
+.container dt li.dd_num{width:113px;padding-right:10px; height:auto; float:left;}
+.container dt li.dd_name,.container dd li.dd_name{width:180px;}
+.container dt li.dd_mz,.container dt li.dd_jine,.container dt li.dd_time{width:75px;}
+.container dt li.dd_operate,.container dd li.dd_operate{border:none; width:88px;}
+.orders-table dd{margin:5px 15px 0px;border-bottom:1px dotted #b8b9ba;padding:3px 0 20px;_padding-bottom:15px;overflow:hidden;}
+.orders-table dd li.dd_num {width:118px;padding:0px 15px 0 0px;height:auto;}
+.orders-table dd li.dd_name{width:185px;padding:5px 10px 5px 10px;height:auto;}
+.orders-table dd li.dd_name .img-box{border:1px solid #e1e1e1;float:left;margin-right:4px;}
+.orders-table dd li.dd_mz,.container dd li.dd_jine{width:75px;}
+.container dd li.dd_time{padding:0px 0 0 0px; width:100px;}
+.container dd li.dd_operate{ color:#005ea7;padding:0px;padding-left:17px;}
+.container dd li.dd_operate a{color:#005ea7;}
+.container dd li.dd_operate a:hover{ text-decoration:underline;}
+.btn-again{background:url(../images/use.gif);display:block;height:21px;line-height:100px;margin:3px 0 0;overflow:hidden;width:72px;}
+.btn-again:hover{background-position:0 -21px}
+.orders-table dd.none{border:none;padding:0px;color:#999;margin:0px 15px;}
+.orders-table dd.none .tips{line-height:20px;padding:0 0 0 20px;margin:10px 0; background-position:0px -480px;}

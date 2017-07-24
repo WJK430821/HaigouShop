@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单信息核对页</title>
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/header.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/footer.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/index.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/good_info.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/mybuycat.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/flow.css" rel="stylesheet">
+</head>
+
+<body>
+<?php include("./Web/View/Home/Buycat/header.html");?>
+    <!--主体开始-->
+      <div class="w">
+      		<div class="maincontent">
+                <div class="orderBox">
+                    <div class="information" style="display:block;">
+                        <div class="orderTit">
+                            <strong>填写收货人信息</strong><a href="<?php echo URL."/buycat/show";?>"><span>[关闭]</span></a>
+                        </div>
+                       
+                        <form action="<?php echo URL."/order/insert";?>"  method="post">
+                        <div class="addrBox">
+                          <div class="addrNew">
+                              <div class="addrForm">
+                                  <label class="fl">
+                                      <span>*</span>
+                                        收货人姓名：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                    <input type="text" name="linkman" class="yangshi"/>
+                                  </div>
+                                </div>
+                                
+                                <div class="addrForm">
+                                  <label class="fl">
+                                      <span>*</span>
+                                        详细地址：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                    <input type="text"  name="address" class="xxdz yangshi" />
+                                  </div>
+                                </div>
+                                <div class="addrForm">
+                                  <label class="fl">
+                                      <span>*</span>
+                                        收货人电话：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                    <input type="text"  name="phone" class="tel yangshi"/>
+                                  </div>
+                                    
+                                    <em class="tishi">*手机和固定电话请至少正确填写一个</em>
+                                </div>
+                                <div class="addrForm">
+                                  <label class="fl">
+                                      <span>*</span>
+                                        常用邮箱：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                    <input type="text"  name="email" class="yangshi"/>
+                                  </div>
+                                     <em class="guding">用来接收订单提醒邮件，便于您及时了解状态</em> 
+                                     <em class="tishi">*邮箱格式不正确</em>
+                                </div>
+                                <div class="addrForm">
+                                  <label class="fl">
+                                      <span>*</span>
+                                        邮政编码：
+                                    </label>
+                                    <div class="addrFormItem fl">
+                                    <input type="text"   name="code" class="yangshi yzm" />
+                                  </div>
+                                    <em class="guding">有助于快速确定送货地址</em> 
+                                </div>
+                                <div class="addrForm">
+                                   <input type="submit" class="baocun" value="提交订单"/>
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+              </div>
+                <table class="cartTable">
+                    <thead>
+                        <tr>
+                            <th class="thWidth350" colspan="2">
+                                <strong>商品</strong>
+                                <span><a href="<?php echo URL."/buycat/show";?>">[修改购物车]</a></span>
+                            </th>
+                          
+                            <th class="thWidth122">
+                                价格
+                            </th>
+                            <th class="thWidth122">
+                                数量
+                            </th>
+                            <th class="thWidth122">
+                                小计
+                            </th>
+                            <th>
+                                库存
+                            </th>
+                        </tr>
+                    </thead>
+           		    <tbody>
+                    <?php
+                      $shoplist = $_SESSION['shoplist']; //从购物车session中获取所有商品信息
+                      if(!empty($shoplist)){
+                      $total = 0; //定义总金额
+                      foreach($shoplist as $shop){
+                        echo "<tr>";
+                            echo "<td>";
+                                echo "<div class=\"goodsImg\">";
+                                    echo "<a href=\"".URL."/index/show?id={$shop['id']}\" target=\"_blank\">";
+                                        echo "<img src=\""._PUBLIC_."uploads/s_{$shop['picname']}\" width=\"50\" height=\"50\">";
+                                    echo "</a>";
+                                echo "</div>";
+                            echo "</td>";
+                            echo "<td>";
+                                echo "<div class=\"goodsInfo\">";
+                                   echo " <a href=\"".URL."/index/show?id={$shop['id']}\" target=\"_blank\">";
+                                        echo "<strong>{$shop['goods']}</strong>";
+                                    echo "</a>";
+                                echo "</div>";
+                            echo "</td>";
+                            
+                             echo "<td class=\"redText\">￥{$shop['price']}</td>";
+                             echo "<td class=\"redText\">{$shop['m']}</td>"; 
+                             echo "<td class=\"redText\">￥".($shop['m']*$shop['price'])."</td>";
+                             echo "<td class=\"redText\">现货</td>";
+                         echo "</tr>";
+                         $total += $shop['m']*$shop['price'];
+                        }
+                      }
+                    ?>
+                    </tbody>
+               </table>
+                <div class="orderBox">
+                	<div class="information">
+                    	 <div class="orderTit">
+                            <strong>结算信息</strong>
+                         </div>
+                         <div class="addrBox">
+                         	 <div class="addrNew">
+                                  <div class="addrForm">
+                                        <div class="dd_zongji">
+                                        	<div class="balanceL">
+                                            	 商品金额：
+                                                 <span>￥<i><?php echo $total;?></i></span>
+                                                 
+                                                 <b>+</b>
+                                                 运费：
+                                                 <span>￥<i>00000</i></span>
+                                                 <b>=</b>
+                                                 订单总计：
+                                                 <span class="quanbu">￥<i><?php echo $total;?></i></span>
+                                            </div>
+                                        </div>
+                                  </div>
+                             </div>
+                         </div>
+                         
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+    <!--主体结束-->
+     <!--尾部-->
+    	<div class="footer">
+
+            <div class="footer-nav">
+            	<div class="wrapper">
+                	<p class="p-nav">
+						<a href="#" target="_blank" rel="nofollow">关于我们</a>  | 
+                        <a href="#" target="_blank" rel="nofollow">企业荣誉</a>  |
+                        <a href="#" target="_blank" rel="nofollow">联系我们</a>  |
+                        <a href="#" target="_blank" rel="nofollow">招贤纳士</a>  |
+                        <a href="#" target="_blank" rel="nofollow">友情链接</a>  |
+                        <a href="#" target="_blank" rel="nofollow">供货商管理平台</a>  |
+                        <a href="#" target="_blank" rel="nofollow">网站地图</a> 	
+                    </p>
+                    <p class="banquan">
+                    	版权所有2008-2012 北京新七天科技有限公司 英特网信息服务业务经营许可证号：京ICP备12008572号-1
+                    </p>
+                    <p class="p-img">
+                    	<a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/b2c.jpg" />
+                        </a>
+                        <a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/dz.jpg" />
+                        </a>
+                        <a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/qiang.jpg" />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!--尾部结束-->
+</body>
+</html>

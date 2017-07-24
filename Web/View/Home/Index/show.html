@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo $this->goods['goods'];?>-考啦嗨购</title>
+    <link rel="stylesheet" href="<?php echo _PUBLIC_?>css/core.css">
+    <link rel="stylesheet" href="<?php echo _PUBLIC_?>css/show.css">
+    <style type="text/css">
+
+/* Code tidied up by ScrapBook */
+.m-addrw { display: inline-block; }
+.m-addr { position: relative; display: inline-block; height: 20px; line-height: 20px; font-size: 12px; }
+.m-addr .iptw { position: relative; display: inline-block; height: 18px; line-height: 18px; width: auto; padding: 0px 5px; vertical-align: middle; text-align: left; border: 1px solid rgb(204, 204, 204); cursor: pointer; }
+.m-addr .iptmsg { width: 114px; white-space: nowrap; overflow: hidden; }
+.m-addr .iptmsg, .m-addr .iptdown { display: inline-block; height: 18px; line-height: 18px; vertical-align: top; }
+.m-addr .iptdown { font-family: "iconfont"; font-size: 11px; color: rgb(102, 102, 102); }
+.m-addr .box { position: absolute; left: 0px; top: 19px; padding: 10px 0px; min-width: 350px; color: rgb(0, 0, 0); border: 1px solid rgb(221, 221, 221); background-color: rgb(255, 255, 255); z-index: 8888; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15); }
+.m-addr .boxclose { position: absolute; right: 15px; top: 10px; width: 18px; height: 18px; text-align: center; font-size: 12px; color: rgba(153, 153, 153, 0.7); cursor: pointer; }
+.m-addr .boxicup { position: absolute; left: 213px; top: -8px; width: 16px; height: 8px; overflow: hidden; background: transparent url("<?php echo _PUBLIC_?>images/productIcons_002.png") no-repeat scroll 0px -8px; }
+.m-addr .box a { display: inline-block; line-height: 24px; height: 24px; padding: 0px 5px; white-space: nowrap; word-break: keep-all; color: rgb(0, 0, 0); outline: medium none; }
+.m-addr .box a:visited { color: rgb(212, 28, 68); }
+.m-addr .box a:hover { line-height: 22px; height: 22px; padding: 0px 4px; color: rgb(212, 28, 68); border: 1px solid rgb(212, 28, 68); text-decoration: none; cursor: pointer; }
+.m-addr .box .tt { height: 30px; width: 100%; padding-left: 10px; overflow: hidden; }
+.m-addr .box .ttw { border-bottom: 1px solid rgb(221, 221, 221); height: 29px; width: 420px; }
+.m-addr .box .tli { position: relative; float: left; width: auto; min-width: 58px; line-height: 32px; height: 28px; padding: 0px 5px; margin-right: -1px; text-align: center; border: 1px solid rgb(221, 221, 221); cursor: pointer; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.m-addr .box .tli.act { font-weight: bold; height: 29px; border-bottom: medium none; }
+.m-addr .box .tli.act::before { position: absolute; left: -1px; top: -1px; width: 100%; border-top: 2px solid rgb(210, 28, 68); border-left: 1px solid rgb(210, 28, 68); border-right: 1px solid rgb(210, 28, 68); content: ""; z-index: 2; }
+
+</style>
+</head>
+<body id="auto-id-1488469160796">
+<!-- header -->
+<?php include("./Web/View/Home/Index/header.html");?>
+<article class="mainWrap ">
+  <div id="j-producthead"><div class="crumbs f-cb">
+  <a href="<?php echo URL; ?>">考啦嗨购</a>&nbsp;&gt;&nbsp;<span class="ellipsis crumbs-title"><?php echo $this->goods['goods'];?></span>
+  <!--Regular if1-->
+</div>
+<div class="PInfoWrap clearfix">
+
+  
+  <div class="PImgBox m-productimgbox">
+    <div id="showImgBox">
+      <!--Regular if2-->
+      <img src="<?php echo _PUBLIC_."/uploads/".$this->goods['picname']; ?>" alt="<?php echo $this->goods['goods'];?>">
+    </div>
+</div>
+
+  <dl class="PInfo PInfo-standout">
+    <dt class="orig-country">
+      <span>品牌</span>
+      <span class="split">|</span>
+      <a class="brand"><?php echo $this->goods['company'];?></a>
+    </dt>
+    
+    <dt class="product-title">
+      <!--Regular if6-->
+      <span><?php echo $this->goods['goods'];?></span>
+    </dt>
+    <!--Regular if7-->
+      <dt class="subTit"><?php echo $this->goods['descr'];?></dt>
+    
+    <dd class="m-price-wrap">
+      <!--inlcude-->
+		<div class="m-price">
+			<span class="m-line-title m-price-title j-price-title">
+			<!--Regular if10--><!--Regular if11--><!--Regular if12-->
+			  售价
+			</span>
+			<div class="m-price-cnt">
+				<!--Regular if13-->
+				<span class="PInfo_r currentPrice">¥<span><?php echo $this->goods['price'];?></span></span>
+				<!--Regular if18-->
+			</div>
+		</div>
+    </dd>
+    <div>
+		<dd class="postage">
+		<span class="m-line-title">运费</span>
+		<div class="msg">
+		  <span> 
+		    <!--Regular if24-->
+		    <span class="from2">至</span>
+		    <div class="mr20 m-addrw">
+				<div class="m-addr">
+					<div class="iptw">
+					  <span class="iptmsg" title="北京/东城区">北京/东城区</span>
+					</div>
+				</div>
+			</div>
+		  </span>
+
+		  <span class="feeInfo"> 
+		    <span class="feeTxt"><span class="u-postage"><i class="fee">满88元包邮<span class="arron iconfont"></span><span class="arroff iconfont"></span></i><i class="desc">自营订单满88元包邮，不足金额的订单收取10元运费。<br>88元以商品活动后的总金额为准，不含税费，使用虚拟资产(优惠券、红包、考拉豆等)不影响包邮的计算。<br>特殊商品及入驻商家商品单独计算运费。</i></span></span>
+		  </span>
+		</div>
+		</dd>
+      <!--Regular if35--> 
+        <dd class="m-service f-cb">
+          <span class="m-line-title f-fl">服务</span>
+          <span class="send">本商品由 自营保税仓 发货</span>
+          <div class="tomorrowarr f-fc j-tomorrowArrival" style="">
+            <span class="m-line-title f-fl"> </span>
+
+            <!--Regular if38-->
+            <span>24:00</span>
+            <span>前完成支付，预计</span>
+            <span class="f-bold">次日24:00前</span>
+            <span>送达</span>
+            
+            <!--Regular if40-->
+          </div>
+        </dd>    
+    </div>
+
+<!--Regular if110-->
+<div style="margin-top:10px;">
+          <!--Regular if111-->
+  <form action="" method="post">
+	<span class="m-line-title fl m-line-am-30">数量</span>
+	<em name="js_buyBox" class="buybox" id="j_buyboxnum">
+    <span class="ctrnum-wrap">
+    <a href="javascript:void(0);" class="ctrnum-b ctrnum-b-rd ctrnum-b-dis" hidefocus="true"></a>
+    <input name="goods[0].tempBuyAmount" class="ctrnum-qty" autocomplete="off" type="text">
+    <a href="javascript:void(0);" class="ctrnum-b ctrnum-b-ad" hidefocus="true"></a>
+  	</span>
+    <span class="domeTips" id="js_dometxt">库存充足</span>
+    <span class="dome hide" id="js_dome"></span>
+    <span class="over-amt-alert left-arrow-tip" id="js_overAmountTip" style="display: none;">
+    <span class="arr0">&nbsp;</span>
+    <span class="arr1">&nbsp;</span>
+    
+  </span>
+</em>
+
+
+
+    <div class="buyBtns">
+      <!--Regular if114--><!--Regular if115--><!--Regular if116-->        
+        <a id="buyBtn" hidefocus="true" href="" class="">立即购买</a>
+        <a id="addCart" hidefocus="true" href="<?php echo URL."/buycat/add?id={$this->goods['id']}";?>" class=""><span class="sign icon-cart20"></span>加入购物车</a>
+        <!--Regular if120-->
+		<div class="buynowonly-wrap">
+		  <ul class="buynowonly-tip-lis point">
+		    <!--Regular list-->
+		      <li><i></i>不支持7天无理由退货</li>
+		  </ul>
+		</div>
+    </div>
+    <input name="goods[0].selected" value="1" type="hidden">
+    <input name="goods[0].goodsId" value="37450" type="hidden">
+    <input name="goods[0].tempCurrentPrice" value="899" type="hidden">
+    <input name="goods[0].tempGoodsActivityType" value="" type="hidden">
+    <input name="goods[0].innerSource" _name="innerSource" value="DETAIL" type="hidden">
+    <input name="s" value="2" type="hidden">
+    <input name="goods[0].skuId" value="43807-84d268045e2cd90607757cb842395b53" type="hidden">
+    <input name="goods[0].productType" value="1000" type="hidden">
+    
+    <!--Regular list-->
+  </form>
+
+        </div>
+
+      </dd>
+
+    <!--Regular if44-->
+<!--Regular if48-->
+   
+  </dl>
+</div>
+<!--Regular if49--><!--Regular if50-->
+</div>
+
+<div class="mainBtmWrap clearfix"> 
+	<div class="siderBox"> 
+		<div id="j-listseeagain" class="sideGrayBox" style="display: block;">
+			<h4>看了又看</h4>
+			<ul class="userBuyView">
+				<li class="clearfix">
+						<a class="aImg" target="_blank" href="http://www.kaola.com/product/1378217.html?rp=detail&amp;zp=klyk&amp;zn=rec&amp;recId=&amp;istext=0">
+							<img title="MICHAEL KORS 迈克高仕 Jet Set女士牛皮搭扣长款钱包" alt="MICHAEL KORS 迈克高仕 Jet Set女士牛皮搭扣长款钱包" src="images/iu445h3q36_800_800.jpg" style="opacity: 1;" border="0">
+						</a>
+					<!--Regular if94-->
+						<p class="promotion"><span title="立省0元">立省0元</span></p>
+					<p class="productTit">
+						<a class="aTit" target="_blank" title="MICHAEL KORS 迈克高仕 Jet Set女士牛皮搭扣长款钱包" href="http://www.kaola.com/product/1378217.html?rp=detail&amp;zp=klyk&amp;zn=rec&amp;recId=&amp;istext=1">MICHAEL KORS 迈克高仕 Jet Set女士牛皮搭扣长款钱包</a>
+					</p>
+
+					<div class="clearfix">
+						<p class="productPrice"><span>¥729</span><del>¥1500</del></p>
+						<p class="commentCount">
+							<a href="http://www.kaola.com/product/1378217.html?rp=detail&amp;zp=klyk&amp;zn=rec&amp;recId=&amp;istext=2#mainBtmWrap" target="_blank">85 人已评价</a>
+						</p>
+					</div>
+
+				</li>
+			</ul>
+		<!--Regular if52-->
+		</div>
+	</div>
+    <div class="goodsDetailWrap j-goodsdetailwrap">       
+    	<div class="P_nav j-nav" style="">
+			<a class="aBuyBtn hide j-sbuybtn" href="javascript:void(0)" id="auto-id-1488469160842">立即购买</a><a class="aAddCart j-saddcart" href="javascript:void(0)" id="auto-id-1488469160841">加入购物车</a>
+		    <span class="j-imagedetailTab j-navtab active" data-info="j-imagedetail" id="auto-id-1488469160816">商品详情<i></i></span>
+		</div>
+		<div id="goodsDetail" class="j-imagedetail j-navinfo">
+
+			<div class="m-textarea">
+			    <div id="textareabox" data-lazyload="//mm.bst.126.net/images/blank.gif?v=201703021645">
+			        <p style="text-align: center;"><img src="<?php echo _PUBLIC_."/uploads/".$this->goods['picname']; ?>" class="img-lazyload img-lazyloaded" id="auto-id-1488469160889"></p> 
+			    </div>
+			</div>
+		</div>
+	    <div class="import-type-desc">
+	        <div class="m-customertips"><b>购买须知</b>
+	          <ol>
+	            <li>您在本（公司）网站上购买的境外商品，仅限个人自用不得进行再销售。商品本身可能无中文标签，您可以查看网站的翻译或者在线联系我们的客服。</li>
+	            <li>您购买的境外商品适用的品质、健康、标识等项目使用标准均按照原产国使用标准（比如本站所销售的欧洲奶粉为欧洲标准，所售美国奶粉为美国标准，所售澳洲奶粉则为澳洲标准），可能与我国标准有所不同，所以在使用过程中产生的危害或损失以及其他风险，将由您个人承担。</li>
+	            <li>您在本（公司）网站上购买保税仓发货的境外商品时，自动视为考拉海购代您向海关进行申报和代缴税款。</li>
+	          </ol>
+	        </div>
+	    </div>
+    </div>
+</div>
+</article>
+<?php include("./Web/View/Home/Index/footer.html");?>
+</body>
+</html>

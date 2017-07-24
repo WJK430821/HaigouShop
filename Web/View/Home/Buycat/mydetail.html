@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的订单页</title>
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/header.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/footer.css" rel="stylesheet">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/index.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="<?php echo _PUBLIC_."mybuycat/";?>css/article.css">
+<link type="text/css" href="<?php echo _PUBLIC_."mybuycat/";?>css/myflow.css" rel="stylesheet">
+<!--[if IE 6]>
+	<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+	<script type="text/javascript">
+	DD_belatedPNG.fix('.shoppingnum,#cart,#cart:hover,.page-list:hover,.item-zoushi,.wrapper');
+	</script>
+<![endif]-->
+</head>
+
+<body>
+<!--头部 action-->
+    <div class="header">
+       <!--toubu  小导航--> 
+        <div class="xdh">
+            <div class="w"> 
+                <ul class="fl ld">
+                  <?php
+                  if($_SESSION["homeuser"]==""){
+                   echo "<li class=\"menuSp\">";
+                                echo "考啦欢迎你！";
+                                echo "<span>";
+                                      echo "<a href=\"".URL."/logins/login\">登录</a>";
+                                      echo "<a href=\"".URL."/register/reg\">免费注册</a>"; 
+                                echo "</span>";
+                          echo "</li>";
+                  }else{
+                    echo "<li class=\"menuSp\">";
+                      echo "考啦欢迎你{$_SESSION['homeuser']['username']}！";
+                      echo "<a class=\"login\" href=\"".URL."/logins/logout\">退出</a>";
+                    echo "</li>";
+                  }
+                ?>
+                </ul>
+                <ul class="fr lh">
+                   <li class="ld"><a href="<?php echo URL."/buycat/myorder";?>" target="_blank">个人中心</a></li>
+                   
+                </ul>
+            </div> 
+        </div>  
+         <!--toubu  小导航--> 
+        <!--logo 搜索部分-->
+        <div class="logosearch w">
+             <div class="logo fl">
+                 <a href="<?php echo URL; ?>" target="_blank">
+                     <img src="<?php echo _PUBLIC_."mybuycat/";?>images/logo.png" />
+                 </a>
+             </div>
+             <div class="search fl">
+                  <div class="kWords">
+                        热门搜索：
+                        <a href="###" class="zuire" target="_blank">创维</a>
+                        <a href="###" target="_blank">LG</a>
+                        <a href="###" target="_blank">松下</a>
+                        <a href="###" target="_blank">长虹</a>
+                        <a href="###" target="_blank">先锋</a>
+                        <a href="###" target="_blank">取暖器</a>
+                        <a href="###" target="_blank">亚都</a>
+                        <a href="###" target="_blank">HTC</a>
+                  </div>
+                  <form>
+                       <div class="searchI">
+                           <label class="searchW">
+                                <input class="searchK" type="text" name="search" value="输入商品 品牌 型号等" />
+                           </label>
+                           <div class="associate" style=";">
+                                <ul>
+                                    <li class="assson"><em>三星</em><span>约10000个搜索结果</span></li>
+                                    <li><em>三星</em><span>约10000个搜索结果</span></li>
+                                    <li><em>三星</em><span>约10000个搜索结果</span></li>
+                                    <li><em>三星</em><span>约10000个搜索结果</span></li>
+                                    <li><em>三星</em><span>约10000个搜索结果</span></li>
+                                    <li><em>三星</em><span>约10000个搜索结果</span></li>
+                                    <li><em>三星</em><span>约10000个搜索结果</span></li>
+                                </ul>
+                           </div>
+                           <input type="button" value="" class="inBut" />
+                       </div>
+                  </form>
+             </div>
+               
+        </div>
+        <!--logo 搜索 over-->
+      </div>  
+    <!--头部 over-->
+    <!--主体部分-->
+    <div class="main1 w">
+    	<div class="mainleft fl">
+            <div class="dd_guanli">
+                <div class="myIndent">
+                    <h1>我的新七天</h1>
+                </div>
+                <div class="mc4">
+                    <strong class="subTit">交易管理</strong>
+                    <ul class="listItem">
+                        <li class="selectedd">
+                            <a href="<?php echo URL;?>/buycat/myorder">我的订单</a>
+                        </li>
+                    </ul>
+                   
+                    <strong class="subTit">个人信息管理</strong>
+                     <ul class="listItem">
+                    	<li>
+                            <a href="<?php echo URL;?>/buycat/myAddress">个人资料</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainright fr">
+        	<div class="dd_list">
+        		<h6>我的订单列表</h6>
+                <div class="orders-table">
+                	<div class="container">
+                    	<dl>
+                        	<dt>
+                            	<ul class="clearfix">
+                                	<li class="dd_num">订单编号</li>
+                                    <li class="dd_name" style="width:230px;">商品名称</li>
+                                    <li class="dd_mz">商品ID</li>
+                                    <li class="dd_jine">单价</li>
+                                    <li class="dd_time">购买数量</li>
+                                </ul>
+                            </dt>
+                            <?php
+                            foreach($this->myorder as $v){
+                            echo "<dd>";
+                            	echo "<ul class=\"product clearfix\">";
+                                	echo "<li class=\"dd_num\">";
+                                    	 echo "2017221134{$v['id']}";
+
+                                    echo "</li>";
+                                    echo "<li class=\"dd_name\" style=\"width:235px;\">";
+                                    	 echo "<div class=\"img-list\">";
+                                            	echo "{$v['name']}";
+                                         echo "</div>";
+                                    echo "</li>";
+                                    echo "<li class=\"dd_mz\">";
+                                    	echo "<p>";
+                                        	echo "{$v['goodsid']}";
+                                        echo "</p>";
+                                    echo "</li>";
+                                    echo "<li class=\"dd_jine\">";
+                                    	echo "<p style=\"color:red\">￥{$v['price']}</p>";
+                                    echo "</li>";
+                                    echo "<li class=\"dd_time\">";
+                                    	echo "<span style=\"text-align:center;color:#999; display:block;\">";
+                                            echo "{$v['num']}";
+                                        echo "</span>";
+                                    echo "</li>";
+                                     echo "<li class=\"dd_operate\">";
+                                    	 echo "<span>";
+                                        	 echo "{$v['addtime']}";
+                                        echo "</span>";
+                                    echo "</li>";
+                                    
+                                echo "</ul>";
+                                echo "<div class=\"clear\"></div>";
+                            echo "</dd>";
+                            }
+                            ?>
+                            <dd class="none">
+                            	<p class="tips">
+                                	您可以查看以往的订单历史记录，或者将以往订单中的商品再次加入到购物车
+                                </p>
+                            </dd>
+                            
+                        </dl>
+                        
+                    </div>
+                    
+                </div>
+    			 <!--分页-->
+                     <div class="page1">   	
+                          <a href="/articleCtrl/index?article_list&amp;page=1">上一页</a>
+                          <a href="/articleCtrl/index?article_list&amp;page=">1</a>     
+                          <span class="current">2</span>      
+                          <a href="/articleCtrl/index?article_list&amp;page=3">3</a>      
+                          <a href="/articleCtrl/index?article_list&amp;page=4">4</a>      
+                          <a href="/articleCtrl/index?article_list&amp;page=3">下一页</a>      
+                          <a href="/articleCtrl/index?article_list&amp;page=39">尾 页</a>            
+                    </div>
+                 <!--分页over-->           
+            </div>
+        </div>	
+    </div>
+    <!--主体部分结束-->
+    <!--尾部-->
+    	<div class="footer">
+        	
+            <div class="footer-nav">
+            	<div class="wrapper">
+                	<p class="p-nav">
+						<a href="#" target="_blank" rel="nofollow">关于我们</a>  | 
+                        <a href="#" target="_blank" rel="nofollow">企业荣誉</a>  |
+                        <a href="#" target="_blank" rel="nofollow">联系我们</a>  |
+                        <a href="#" target="_blank" rel="nofollow">招贤纳士</a>  |
+                        <a href="#" target="_blank" rel="nofollow">友情链接</a>  |
+                        <a href="#" target="_blank" rel="nofollow">供货商管理平台</a>  |
+                        <a href="#" target="_blank" rel="nofollow">网站地图</a> 	
+                    </p>
+                    <p class="banquan">
+                    	版权所有2008-2012 北京新七天科技有限公司 英特网信息服务业务经营许可证号：京ICP备12008572号-1
+                    </p>
+                    <p class="p-img">
+                    	<a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/b2c.jpg" />
+                        </a>
+                        <a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/dz.jpg" />
+                        </a>
+                        <a href="#" target="_blank" rel="nofollow">
+                        	<img src="images/qiang.jpg" />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!--尾部结束-->
+</body>
+</html>

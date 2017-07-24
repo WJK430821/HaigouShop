@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.help_content{border:1px solid #dedede;padding:10px;line-height:25px; font-family:'微软雅黑';}
+.help_content h2{font-size:14px;margin:10px 10px 10px 0px;padding-bottom:5px;font-weight:bold;color:#000;border-bottom:1px solid #dedede;}
+.help_content .nr_help p{line-height:26px;color:#555; text-align:left; margin-bottom:10px;padding:0 10px;}
+.help_content .biaoti{padding:0 10px;color:#333;margin-bottom:10px;}
+.table,.tables{margin:10px 0;}
+.table a {color: #004096;}
+.table a:hover{ color:#f60;}
+.table td ,.tables td{padding:4px 10px;}
+.tables{text-align:center; width:100%;}
+.tables td{ background:#EA5504;}
+.tables a:hover{color:#fff;}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>考啦嗨购商城</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="<?php echo _PUBLIC_."/"?>css/core.css">
+<link rel="stylesheet" href="<?php echo _PUBLIC_."/"?>css/index.css">
+<link rel="stylesheet" href="<?php echo _PUBLIC_."/"?>css/jquery.bxslider.css">
+<link rel="stylesheet" href="<?php echo _PUBLIC_."/"?>css/style.css">
+<style type="text/css">
+/* Code tidied up by ScrapBook */
+#indexleft { margin-left: -665px; }
+</style>
+<!--[if IE]>
+<script type="text/javascript">
+(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+</script>
+<![endif]-->
+<style type="text/css">
+/* Code tidied up by ScrapBook */
+.m-addrw { display: inline-block; }
+.m-addr { position: relative; display: inline-block; height: 20px; line-height: 20px; font-size: 12px; }
+.m-addr .iptw.z-nomsg, .m-addr .iptw.z-nomsg .iptdown { color: rgb(153, 153, 153); }
+.m-addr .iptw { position: relative; display: inline-block; height: 18px; line-height: 18px; width: auto; padding: 0px 5px; vertical-align: middle; text-align: left; border: 1px solid rgb(204, 204, 204); cursor: pointer; }
+.m-addr .iptmsg { width: 114px; white-space: nowrap; overflow: hidden; }
+.m-addr .iptmsg, .m-addr .iptdown { display: inline-block; height: 18px; line-height: 18px; vertical-align: top; }
+.m-addr .iptdown { font-family: "iconfont"; font-size: 11px; color: rgb(102, 102, 102); }
+.m-addr .box { position: absolute; left: 0px; top: 19px; padding: 10px 0px; min-width: 350px; color: rgb(0, 0, 0); border: 1px solid rgb(221, 221, 221); background-color: rgb(255, 255, 255); z-index: 8888; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15); }
+.m-addr .boxclose { position: absolute; right: 15px; top: 10px; width: 18px; height: 18px; text-align: center; font-size: 12px; color: rgba(153, 153, 153, 0.7); cursor: pointer; }
+.m-addr .boxicup { position: absolute; left: 213px; top: -8px; width: 16px; height: 8px; overflow: hidden; background: transparent url("productIcons.png") no-repeat scroll 0px -8px; }
+.m-addr .box a { display: inline-block; line-height: 24px; height: 24px; padding: 0px 5px; white-space: nowrap; word-break: keep-all; color: rgb(0, 0, 0); outline: medium none; }
+.m-addr .box a:visited { color: rgb(212, 28, 68); }
+.m-addr .box a:hover { line-height: 22px; height: 22px; padding: 0px 4px; color: rgb(212, 28, 68); border: 1px solid rgb(212, 28, 68); text-decoration: none; cursor: pointer; }
+.m-addr .box .tt { height: 30px; width: 100%; padding-left: 10px; overflow: hidden; }
+.m-addr .box .ttw { border-bottom: 1px solid rgb(221, 221, 221); height: 29px; width: 420px; }
+.m-addr .box .tli { position: relative; float: left; width: auto; min-width: 58px; line-height: 32px; height: 28px; padding: 0px 5px; margin-right: -1px; text-align: center; border: 1px solid rgb(221, 221, 221); cursor: pointer; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.m-addr .box .tli.act { font-weight: bold; height: 29px; border-bottom: medium none; }
+.m-addr .box .tli.act::before { position: absolute; left: -1px; top: -1px; width: 100%; border-top: 2px solid rgb(210, 28, 68); border-left: 1px solid rgb(210, 28, 68); border-right: 1px solid rgb(210, 28, 68); content: ""; z-index: 2; }
+.m-addr .boxlist { float: left; width: 420px; padding: 0px 20px; overflow: hidden; }
+.m-addr .boxlist .tcli { display: inline-block; float: left; width: 55px; line-height: 24px; margin: 6px 0px 0px; }
+.m-addr .boxlist .tclitt { width: 60px; height: 24px; color: rgb(153, 153, 153); line-height: 24px; }
+.m-addr .boxlist2 span { width: 100px; }
+.m-addr .boxlist2 { width: 400px; }
+.m-addr .boxlist .cityBox { display: none; height: auto; width: 360px; margin: 11px 0px 5px; padding: 5px 0px 9px; border-top: 1px solid rgb(221, 221, 221); border-bottom: 1px solid rgb(221, 221, 221); background-color: rgb(247, 247, 247); }
+.m-addr .boxlist .cityBoxCurr, .m-addr .boxlist .currCity { display: block; }
+.m-addr .boxlist .addrline { padding-left: 15px; }
+.m-addr .boxlist .selected { background-color: rgb(212, 28, 68); color: rgb(255, 255, 255); }
+.m-addr .boxlist .selected:visited, .m-addr .boxlist .selected:hover { color: rgb(255, 255, 255); }
+</style><style type="text/css">
+/* Code tidied up by ScrapBook */
+.m-seeCodeModal .modal-body { padding: 30px 59px; }
+.m-seeCodeModal .m-modal-message { text-align: left; padding-bottom: 18px; }
+.m-seeCodeModal .code { margin-bottom: 15px; padding: 8px 0px 14px; border-bottom: 1px solid rgb(221, 221, 221); }
+.m-seeCodeModal .m-exchangecode { line-height: 24px; }
+.m-seeCodeModal .from-label, .m-seeCodeModal .from-content {  }
+.m-seeCodeModal .from-label { float: left; line-height: 36px; }
+.m-seeCodeModal .from-content { padding-left: 90px; }
+.m-seeCodeModal .from-content input { padding: 10px; width: 218px; height: 14px; font-size: 12px; color: inherit; border: 1px solid rgb(213, 213, 213); }
+.m-seeCodeModal .send-tip { line-height: 27px; font-size: 12px; color: rgb(153, 153, 153); }
+.m-seeCodeModal .m-exchangecode .has-error { color: rgb(210, 33, 71); }
+.m-alert-modal {  }
+.m-exchange .title .iconfont, .m-alert-modal .iconfont { margin-right: 8px; font-size: 24px; }
+.m-exchange .text, .m-exchange .title .iconfont, .m-alert-modal .text, .m-alert-modal .title .iconfont { vertical-align: middle; }
+.m-exchange .title, .m-alert-modal .title { font-size: 23px; }
+.m-seeCodeModal .iconfont.error, .m-alert-error .title .iconfont { color: rgb(194, 13, 56); }
+.m-seeCodeModal .iconfont.success, .m-alert-success .title .iconfont { color: rgb(93, 197, 64); }
+.m-exchange .title .iconfont { margin-right: 12px; }
+.m-exchange .code, .m-exchange .error-tip, .m-exchange .operation-tip { padding-left: 36px; }
+.m-exchange .code { overflow: hidden; }
+.m-exchange .code li { padding-right: 25px; float: left; }
+.m-exchange .error-tip { padding-top: 9px; padding-bottom: 9px; border-bottom: 1px solid rgb(221, 221, 221); }
+.m-exchange .operation-tip { margin-bottom: 2px; padding-top: 7px; padding-bottom: 7px; }
+.m-exchange .operation-tip .u-jump-url { padding: 0px 5px; }
+</style>
+</head>
+<body id="index-netease-com" class="indexPage bdNarrowHome">
+<!--[if lt IE 9]>
+<div class="m-browserupdate">
+<p>您的浏览器该退休啦！为了您的购物安全，考拉建议您升级浏览器：<a onclick="window._dapush('_trackEvent', '浏览器升级提示', '点击', 'chrome')" class="w-icn-14" target="_blank" href="//mm.bst.126.net/download/ChromeSetup.exe" rel="nofollow">chrome浏览器</a>，<a onclick="window._dapush('_trackEvent', '浏览器升级提示', '点击', 'firefox')" class="w-icn-14 w-icn-14-2" target="_blank" href="http://www.firefox.com.cn/" rel="nofollow">火狐浏览器</a> 或 <a onclick="window._dapush('_trackEvent', '浏览器升级提示', '点击', 'IE')" class="w-icn-14 w-icn-14-3" target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" rel="nofollow">最新IE浏览器</a></p>
+</div>
+<![endif]-->
+<?php include("./Web/View/Home/Index/header.html");?>
+<div class="wrap topBgWrapPos" style="z-index: 10;">
+<!-- 焦点幻灯特效 -->
+<article class="topBgWrap clearfix">
+	<div class="top_slide_wrap">
+		<ul class="slide_box bxslider">
+			<li>
+				<a href="#"><img src="<?php echo _PUBLIC_."/"?>images/banner2.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="#"><img src="<?php echo _PUBLIC_."/"?>images/banner1.jpg" alt="" title="城市预测"></a>
+			</li>
+			<li>
+				<a href="#"><img src="<?php echo _PUBLIC_."/"?>images/banner3.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="#"><img src="<?php echo _PUBLIC_."/"?>images/banner4.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="#"><img src="<?php echo _PUBLIC_."/"?>images/banner5.jpg" alt=""></a>
+			</li>
+		</ul>
+		<div class="op_btns clearfix">
+			<a href="#" class="op_btn op_prev"><span></span></a>
+			<a href="#" class="op_btn op_next"><span></span></a>
+		</div>
+	</div>
+</article>
+<!-- end -->
+<article class="m-sellpoint">
+	<section class="m-contentwrap f-cb">
+	</section>
+</article>
+
+<article id="rowOfXResource" class="m-rowofx" hasbg="false" top="20" style="padding-top: 20px;">
+	<ul class="j-newuser-row row-box f-cb">
+		<li class="row-wrap">
+			<ul class="rowof4 row f-cb">
+				<li>
+					<a class="pic" target="_blank" href="" title="" style="height: 220px;">
+					<img title="" alt="" class="img-lazyload opacity1 img-lazyloaded" src="<?php echo _PUBLIC_."/"?>images/izo09ude0_265_220.jpg" >
+					</a>
+				</li>
+				<li>
+					<a  class="pic" target="_blank" href=""  title="" style="height: 220px;">
+					<img title="" alt="" class="img-lazyload opacity1 img-lazyloaded" src="<?php echo _PUBLIC_."/"?>images/izo0ajel57_265_220.jpg">
+					</a>
+				</li>
+				<li>
+					<a class="pic" target="_blank" href=""  title="" style="height: 220px;">
+					<img title="" alt="" class="img-lazyload opacity1 img-lazyloaded" src="<?php echo _PUBLIC_."/"?>images/izo552xa67_265_220.jpg" >
+					</a>
+				</li>
+				<li>
+					<a class="pic" target="_blank" href=""  title="" style="height: 220px;">
+					<img title="" alt="" class="img-lazyload opacity1 img-lazyloaded" src="<?php echo _PUBLIC_."/"?>images/izoaujb719_265_220.jpg">
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</article>
+<div class="mainBgWrap clearfix" id="mainBgWrapHome">
+<!--Regular if92-->
+<article id="2017022721FlashSale96335665" class="m-dailylimit">
+    <h2 class="w-tit1 w-tit1-1 tit"><span class="big">精品推荐</span><!--Regular if93--></h2>
+    <section class="cnt f-cb">
+        <ul class="goodslist">
+            <!--Regular list-->
+            <?php
+                foreach($this->hotlist as $hot){
+                echo "<li class=\"goods f-cb\">";
+                    echo "<a href=\"".URL."/index/show?id={$hot['id']}\" class=\"pic\" target=\"_blank\">";
+                        echo "<img class=\"img-lazyload img-lazyloaded\" src=\""._PUBLIC_."/uploads/m_{$hot['picname']}\" title=\" \">";
+                    echo "</a>";
+                    echo "<div class=\"detail\">";
+                        echo "<h3 class=\"intro\"><a href=\"".URL."/index/show?id={$hot['id']}\" target=\"_blank\" title=\"\" >{$hot['goods']}</a></h3>";
+                        echo "<h3 class=\"shortTitle\"><a href=\"".URL."/index/show?id={$hot['id']}\" target=\"_blank\" title=\"\" >{$hot['descr']}</a></h3>";
+                        echo "<p class=\"price\"><b>¥</b>{$hot['price']}</p>";
+                            echo "<a class=\"btn f-hover\" href=\"".URL."/buycat/add?id={$hot['id']}\" target=\"_blank\" >加入购物车</a>";
+                    echo "</div>";
+                echo "</li>";
+                }
+            ?>
+        </ul>
+        <aside class="aside">
+            <a href="" class="pic" target="_blank"><img  src="<?php echo _PUBLIC_?>images/j0d9lup691_221_378.jpg"></a>
+        </aside>
+    </section>
+</article>
+
+<article class="m-recomds m-recomds-new" id="346329">
+	<h2 class="w-tit1 w-tit1-1"><span class="big">新品上市</span>全世界好物，0点更新</h2>
+	<ul class="clearfix">
+    <?php
+        foreach($this->newlist as $new){
+		echo "<li class=\"itm1\">";
+		echo "<a  class=\"pic\" href=\"".URL."/index/show?id={$new['id']}\" target=\"_blank\">";
+		echo "<img class=\"img-lazyload proImg img-lazyloaded\" src=\""._PUBLIC_."uploads/m_{$new['picname']}\" data-width=\"188px\" data-height=\"188px\" alt=\"{$new['goods']}\" id=\"auto-id-1488296967490\">";
+		echo "</a>";
+		echo "<div class=\"txt\">";
+		echo "<h3 class=\"tit\">";
+		echo "<a class=\"protitle\" target=\"_blank\" href=\"".URL."/index/show?id={$new['id']}\" title=\"\">";
+		echo "<p class=\"shorttit\">{$new['goods']}</p>";
+		echo "</a>";
+		echo "<p class=\"introduce\">{$new['descr']}</p>";
+		echo "</h3>";
+
+		echo "<p class=\"price m-price\">";
+		echo "<strong class=\"item1\"><span class=\"symbol\">¥</span>{$new['price']}</strong>";
+		echo "</p>";
+		echo "</div>";
+		echo "</li>";
+        }
+	?>
+    <li class="itm5">
+        <a class="pic pimg" target="_blank">
+        <img class="img-lazyload proImg img-lazyloaded" src="<?php echo _PUBLIC_?>images/iznza15q14_221_308.jpg" data-src="/" data-width="221px" data-height="308px" alt="今日上新" title="今日上新" id="auto-id-1488296967494">
+        </a>
+    </li>
+	</ul>
+</article>
+<!-- 爆款热卖 -->
+<div id="guess" class="newRecomWrap m-favrec">
+    <h4 class="newRecomTitle">爆款热卖<b></b>
+    </h4>
+    <div class="m-reclst clearfix">
+    <!--Regular list-->
+    <?php
+        foreach($this->clicklist as $click){
+        echo "<div class=\"newRecomItemWrap newRecomItemWrap-1\">";
+            echo "<a class=\"itemImg\" target=\"_blank\" href=\"".URL."/index/show?id={$click['id']}\">";
+                echo "<img  alt=\"{$click['goods']}\" src=\""._PUBLIC_."uploads/m_{$click['picname']}\" style=\"opacity: 1;\" border=\"0\">";
+            echo "</a>";
+            echo "<p class=\"itemTitle\">";
+                echo "<a class=\"protitle\" href=\"\" title=\"\" target=\"_blank\">{$click['goods']}</a>";
+            echo "</p>";
+            
+            echo "<div class=\"itemInfo clearfix\">";
+                echo "<p class=\"price\"><span class=\"symbol\">¥</span>{$click['price']}</p>";
+            echo "</div>";
+        echo "</div>";
+        }
+    ?>
+    </div>
+    <!--Regular if1-->
+</div>
+<!-- 爆款热卖END -->
+<section class="m-profloorlist" id="j-profloorlist">
+	<!-- 环球美食 -->
+	<article class="m-productfloor">
+		<div class="w-tit1 w-tit1-1 clearfix">
+			<h2 class="tit"><span class="big">环球美食</span></h2>
+			<ul class="w-taglist clearfix">
+				<?php
+                //循环输出根类别信息
+                foreach($this->meislist as $k=>$v){
+				echo "<li>";
+				echo "<a class=\"itm marked\" href=\"".URL."/index/list?tid={$v['id']}&typeid={$v['id']}\" target=\"_blank\">{$v['name']}</a><span class=\"sep\">|</span>";
+				echo "</li>";
+				}
+				?>
+			</ul>
+			<a class="u-btn-more" href="<?php echo URL;?>/index/list?tid=30" target="_blank">更多好货>></a>
+		</div>
+		<div class="cont clearfix">
+			<div class="partl">
+				<a  class="pic picl" href=""  target="_blank" title="">
+					<img class="img-lazyload opacity1" src="<?php echo _PUBLIC_."/"?>images/j00mneu127_246_440.jpg"  data-width="246px" data-height="440px" alt="" title="" width="246px" height="440px">
+				</a>
+				
+			</div>
+			<div class="partm">
+				<ul class="w-activlist clearfix">
+				<?php
+					foreach($this->mslist as $msgoods){
+					echo "<li class=\"itm1\">";
+						echo "<a  class=\"pic\" href=\"".URL."/index/show?id={$msgoods['id']}\"  target=\"_blank\" title=\"\">";
+						echo "<h3 class=\"tit\">{$msgoods['goods']}</h3>";
+						echo "<p class=\"desc s-fc2\" style=\"color:rgb(227, 20, 54);;font-size:16px;font-weight:bold;\">￥{$msgoods['price']}</p>";
+						echo "<img class=\"img-lazyload\" src=\""._PUBLIC_."/uploads/s_{$msgoods['picname']}\" data-height=\"144px\" alt=\"\" id=\"auto-id-1488296967591\" width=\"155px\" height=\"144px\">";
+						echo "</a>";
+					echo "</li>";
+					}
+				?>
+				</ul>
+			</div>
+			<div class="party m-prolist">
+				<h3 class="title">最新热卖</h3>
+				<div class="prolist" id="auto-id-1488296967663">
+					<div class="itemgroup" style="opacity: 1; z-index: 10;">
+						<?php
+						foreach($this->msglist as $ms=>$chi){
+						echo "<div class=\"itemsale clearfix\">";
+							echo "<a  class=\"pic\" title=\"{$chi['goods']}\" href=\"".URL."/index/show?id={$chi['id']}\" target=\"_blank\">";
+								echo "<img src=\""._PUBLIC_."/uploads/s_{$chi['picname']}\" alt=\"{$chi['goods']}\" width=\"75px\" height=\"75px\">";
+							echo "</a>";
+							echo "<div class=\"proinfo\">";
+							echo "<h3 class=\"tit\"><a  class=\"protitle\"  href=\"".URL."/index/show?id={$chi['id']}\"  target=\"_blank\">{$chi['goods']}</a></h3>";
+							echo "<p class=\"curprice\">";
+							echo "<span class=\"symbol\">¥</span><strong>{$chi['price']}</strong>";
+							echo "</p>";
+							echo "</div>";
+						echo "</div>";
+						}
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- 环球美食END -->
+	<!-- 服装 -->
+	<article  class="m-productfloor">
+		<div class="w-tit1 w-tit1-1 clearfix">
+			<h2 class="tit"><span class="big">男女服装</span></h2>
+			<ul class="w-taglist clearfix">
+				<li class="first">热搜词：</li>
+				<li>
+				<a class="itm marked" href="" target="_blank" title="">阿迪达斯</a><span class="sep">|</span>
+				</li>
+
+				<li class="last">
+				<a class="itm marked"  href="" target="_blank" title="">下单68折</a>
+				</li>
+			</ul>
+			<a class="u-btn-more" href="<?php echo URL;?>/index/list?tid=1" target="_blank">更多好货>></a>
+		</div>
+		<div class="cont clearfix">
+			<div class="partl">
+				<a class="pic picl" href="" target="_blank" title="">
+				<img class="img-lazyload opacity1" src="<?php echo _PUBLIC_."/"?>images/iz9g9hn562_246_440.jpg"  data-width="246px" data-height="440px" alt="" title="" id="auto-id-1488296967603" width="246px" height="440px">
+				</a>
+				
+			</div>
+			<div class="partm">
+				<ul class="w-activlist clearfix">
+					<?php
+					foreach($this->nvlist as $fzgoods){
+					echo "<li class=\"itm1\">";
+						echo "<a  class=\"pic\" href=\"".URL."/index/show?id={$fzgoods['id']}\"  target=\"_blank\" title=\"\">";
+						echo "<h3 class=\"tit\">{$fzgoods['goods']}</h3>";
+						echo "<p class=\"desc s-fc2\" style=\"color:rgb(227, 20, 54);;font-size:16px;font-weight:bold;\">￥{$fzgoods['price']}</p>";
+						echo "<img class=\"img-lazyload\" src=\""._PUBLIC_."/uploads/s_{$fzgoods['picname']}\" data-height=\"144px\" alt=\"\" id=\"auto-id-1488296967591\" width=\"155px\" height=\"144px\">";
+						echo "</a>";
+					echo "</li>";
+					}
+				?>
+				</ul>
+			</div>
+			<div class="party m-prolist">
+				<h3 class="title">最新热卖</h3>
+				<div class="prolist" id="auto-id-1488296967668">
+					<div class="itemgroup" style="opacity: 1; z-index: 10;">
+						<?php
+						foreach($this->fuzolist as $fz=>$zhi){
+						echo "<div class=\"itemsale clearfix\">";
+							echo "<a  class=\"pic\" title=\"{$zhi['goods']}\" href=\"".URL."/index/show?id={$zhi['id']}\" target=\"_blank\">";
+								echo "<img src=\""._PUBLIC_."/uploads/s_{$zhi['picname']}\" alt=\"{$zhi['goods']}\" width=\"75px\" height=\"75px\">";
+							echo "</a>";
+							echo "<div class=\"proinfo\">";
+							echo "<h3 class=\"tit\"><a  class=\"protitle\"  href=\"".URL."/index/show?id={$zhi['id']}\"  target=\"_blank\">{$zhi['goods']}</a></h3>";
+							echo "<p class=\"curprice\">";
+							echo "<span class=\"symbol\">¥</span><strong>{$zhi['price']}</strong>";
+							echo "</p>";
+							echo "</div>";
+						echo "</div>";
+						}
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- 运动户外END -->
+</section>
+
+</div>
+</div>
+<!-- footer -->
+<?php include("./Web/View/Home/Index/footer.html"); ?>
+<!-- 焦点特效 -->
+<script type="text/javascript" src="<?php echo _PUBLIC_."/"?>js/jquery-1.11.1.min_044d0927.js"></script>
+<script type="text/javascript" src="<?php echo _PUBLIC_."/"?>js/jquery.bxslider_e88acd1b.js"></script>
+<script type="text/javascript">
+(function(){
+	$(".bxslider").bxSlider({
+		auto:true,
+		prevSelector:$(".top_slide_wrap .op_prev")[0],nextSelector:$(".top_slide_wrap .op_next")[0]
+	});
+})();
+</script>
+<!-- end -->
+</body>
+</html>

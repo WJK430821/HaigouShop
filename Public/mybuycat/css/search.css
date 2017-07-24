@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*主体内容*/
+.finally{ width:985px; height:58px; border:1px solid #e7e7e7; background:#f6f6f6; margin-bottom:10px; line-height:58px; font-size:14px; color:#666; padding-left:15px; letter-spacing:1px;}
+.finally span{ color:#00479d; font-weight:bold;}
+.mc2 ul{padding:0 8px;}
+.mc2 ul li{ height:auto;border-top:1px dotted #dedede; padding:8px 0;}
+
+/*主体右侧*/
+.paixu{height:22px; margin-bottom:10px; padding:10px 10px 0;}
+.paixu ul li{ float:left;height:22px; border:1px solid #ddd; line-height:22px; margin-right:10px;position:relative;}
+.paixu ul li a{padding:0 10px; display:inline-block; float:left;}
+.paixu .down a{padding-right:20px;}
+.paixu .curr,.paixu .up {border:1px solid #004da5;background:#004da5;}
+.paixu .curr a,.paixu .up a{ color:#fff; font-weight:bold;}
+.paixu .down b{display:block;width:9px; height:11px; position:absolute;top:5px;right:4px; overflow:hidden;}
+.paixu .curr b{background-position:-125px -88px;}
+.paixu .up b{background-position:-125px -100px;}
+
+/*搜索列表内容*/
+.proListTile{ padding:8px 10px 0px 10px; margin-bottom:20px;}
+.proListTile li{width:242px;height:310px; border:5px solid #fff; float:left; padding:10px 0 0px 0px; overflow:hidden;}
+.proListTile li.foc{border:5px solid #f5f5f5;}
+.proListTile li img{ display:block; margin:3px auto; overflow:hidden; border:1px solid #fff;}
+.inforBg{ padding:5px 5px 0 15px;}
+.inforBg span{ display:block; width:202px; height:38px; overflow:hidden;}
+.inforBg span a:hover,.proListTile li .opre a:hover{ color:#f60; text-decoration:underline;}
+.inforBg .price{ color:#dd0000; font-size:18px; font-weight:700; margin-bottom:3px;}
+.inforBg .price b{ font-size:12px;}
+.proListTile li .comment p{ float:left; padding-right:5px;}
+.proListTile li .comment a{ color:#0081cc;}
+.proListTile li .comment a i{ font-style:normal;}
+.proListTile li .comment .stars{ width:85px; height:16px; float:left;}
+.proListTile li .opre{ clear:both; margin-top:15px;}
+.proListTile li .opre a{ width:45px; height:22px; line-height:23px; color:#333; text-align:center; overflow:hidden; float:left; display:block; margin-right:8px;}
+.proListTile li .opre .buy{ width:88px; height:24px; background-position:0px -401px;}
+.proListTile li .opre .scduibi{ background-position:-92px -402px;}
+
+/*重新搜索*/
+.cxsearch{ width:700px; height:70px;border:1px solid #e7e7e7; background:#f6f6f6; margin-left:18px;  padding-left:20px; position:relative;}
+.cxsearch span{ font-size:14px; color:#555; font-weight:900; display:block; float:left; margin-right:15px;line-height:70px;}
+.cxsearch .searchI{ margin-top:14px;}
+.cxsearch .inBut{ top:14px; right:93px;_right:91px;}
+

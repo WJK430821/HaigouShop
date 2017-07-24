@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.thuan h6{ border-bottom:2px solid #4292CE;}
+
+.tuihuan{border:1px solid #e6e6e6; border-top:none; overflow:hidden;zoom:1;}
+.itemcz{padding:10px 10px 10px 0px; overflow:hidden;zoom:1;}
+.form .text{width:225px;margin-right:5px;padding:4px;border:1px solid #ccc; color:#999;}
+.form .bti{width:50px;height:25px; background:url(../images/use.gif) 0 -42px no-repeat; color:#666; text-align:center; line-height:25px; cursor:pointer; border:none;}
+
+.tb-line{border-top:1px solid #e6e6e6; overflow:hidden; margin:0px -1px -1px -1px;}
+.tb-line table{border-collapse:collapse;border:solid #e6e6e6;border-width:0px 1px 1px 1px;}
+.tb-line th{ background:#f7f7f7 url(../images/tb-th.2011.gif) repeat-x; height:31px;color:#666; font-weight:normal;}
+.tb-line td{border:solid #e6e6e6;border-width:1px 0px 0px 1px;padding:5px 4px; text-align:center; color:#666;}
+.tb-line td a{ color:#005ea7;}
+.tb-line td a:hover{ text-decoration:underline;}
+
+.list-h{ overflow:hidden;zoom:1;}
+.list-h li{ float:left; padding:0 10px;}
+.list-h li .p-img111{ padding:10px 0;}
+.btnss a.btn-8{ width:64px;height:21px; background:url(../images/use.gif) 0px -129px no-repeat;text-align:center; display:inline-block; line-height:21px;}
+
+.m7{ overflow:visible; position:relative;top:10px;margin-bottom:10px;}
+.mt8{ position:absolute;left:12px;top:-12px;}
+.mt8 h2{color:#666; background:#fff; line-height:25px; padding:0 8px;font-size:12px;}
+.m7 .thuan{border:1px solid #e6e6e6; padding:20px;}
+.m7 .thuan ol li{ line-height:22px; color:#666; font-size:12px; font-family:'微软雅黑';}
+.m7 .thuan ol li span{color:#005ea7;}
+
+/*退换货服务明细*/
+.fuwumx{ border:1px solid #e6e6e6; overflow:hidden; zoom:1; margin-top:13px;}
+.mingdan{ background:url(../images/tb-th.2011.gif) 0 -31px repeat-x;height:34px;line-height:34px; padding-left:16px; border-bottom:1px solid #e6e6e6;}
+.mingdan h3{ color:#333; font-size:16px; font-family:'微软雅黑';}
+
+.chuli{ padding:20px;}
+.chuli1{*padding-bottom:35px;}
+.mingx-1{ margin-bottom:10px; float:left;}
+.mingx-1 .label{ width:122px; line-height:25px;color:#666;margin-right:5px; *margin-right:0px; text-align:right;}
+.list-type li{ float:left; margin-right:14px; display:inline;}
+.list-type li .radio{position:relative;top:3px;*top:0px;_top:3px;margin:0 5px 0 0;*margin-left:-8px;}
+.chuli .form em{color:#f60; margin-right:3px;}
+.chuli .form label {line-height:25px;margin-right:8px; color:#999;}
+.chuli .form .area{ width:416px; height:86px; margin-bottom:8px; border:1px solid #ddd; overflow:hidden; zoom:1;padding:2px;color:#666;}
+
+.upPic{width:666px;padding:10px;border:1px solid #ddd; position:relative; margin-bottom:5px;}
+.upPic .photo_title{ position:absolute;top:-9px;left:30px; line-height:16px; font-size:16px;color:#4292CE;  background:#FFF; font-family:'微软雅黑';}
+.upPic .fieldset{ width:686px;margin-bottom:10px; overflow:hidden;}
+.upPic .upPicBg{width:108px;height:31px; background-position:-2px -986px; margin:0 auto; cursor:pointer;}
+
+.color{ color:#f00;}
+
+.lc_btn{padding:0px 0 15px; text-align:center;}
+.lc_btn input{ width:106px;height:30px;border:0; text-indent:-9px;cursor:pointer;}
+.lc_btn input.tijiao{background-position:0px -1030px;}
+.lc_btn input.quxiao{background-position:0px -1072px; margin-left:15px;}
